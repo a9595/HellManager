@@ -17,6 +17,18 @@
           <EntitySet Name="Sins" EntityType="EFModel.Sin" />
           <EntitySet Name="Punishments" EntityType="EFModel.Punishment" />
           <EntitySet Name="Punishers" EntityType="EFModel.Punisher" />
+          <AssociationSet Name="SinnerSin" Association="EFModel.SinnerSin">
+            <End Role="Sinner" EntitySet="Sinners" />
+            <End Role="Sin" EntitySet="Sins" />
+          </AssociationSet>
+          <AssociationSet Name="SinnerPunisher" Association="EFModel.SinnerPunisher">
+            <End Role="Sinner" EntitySet="Sinners" />
+            <End Role="Punisher" EntitySet="Punishers" />
+          </AssociationSet>
+          <AssociationSet Name="PunishmentSin" Association="EFModel.PunishmentSin">
+            <End Role="Punishment" EntitySet="Punishments" />
+            <End Role="Sin" EntitySet="Sins" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Sinner">
           <Key>
@@ -24,6 +36,8 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" MaxLength="32" />
+          <NavigationProperty Name="Sins" Relationship="EFModel.SinnerSin" FromRole="Sinner" ToRole="Sin" />
+          <NavigationProperty Name="Punisher" Relationship="EFModel.SinnerPunisher" FromRole="Sinner" ToRole="Punisher" />
         </EntityType>
         <EntityType Name="Sin">
           <Key>
@@ -31,6 +45,8 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" />
+          <NavigationProperty Name="Sinners" Relationship="EFModel.SinnerSin" FromRole="Sin" ToRole="Sinner" />
+          <NavigationProperty Name="Punishments" Relationship="EFModel.PunishmentSin" FromRole="Sin" ToRole="Punishment" />
         </EntityType>
         <EntityType Name="Punishment">
           <Key>
@@ -39,6 +55,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="TreatCycle" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="Sins" Relationship="EFModel.PunishmentSin" FromRole="Punishment" ToRole="Sin" />
         </EntityType>
         <EntityType Name="Punisher">
           <Key>
@@ -46,7 +63,20 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" />
+          <NavigationProperty Name="Sinners" Relationship="EFModel.SinnerPunisher" FromRole="Punisher" ToRole="Sinner" />
         </EntityType>
+        <Association Name="SinnerSin">
+          <End Type="EFModel.Sinner" Role="Sinner" Multiplicity="*" />
+          <End Type="EFModel.Sin" Role="Sin" Multiplicity="*" />
+        </Association>
+        <Association Name="SinnerPunisher">
+          <End Type="EFModel.Sinner" Role="Sinner" Multiplicity="*" />
+          <End Type="EFModel.Punisher" Role="Punisher" Multiplicity="1" />
+        </Association>
+        <Association Name="PunishmentSin">
+          <End Type="EFModel.Punishment" Role="Punishment" Multiplicity="*" />
+          <End Type="EFModel.Sin" Role="Sin" Multiplicity="*" />
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
