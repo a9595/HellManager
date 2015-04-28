@@ -14,8 +14,17 @@ namespace EntityFrameworkDAL
     
     public partial class Punishment
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Punishment()
+        {
+            this.Sins = new HashSet<Sin>();
+        }
+    
         public int Id { get; set; }
         public string Name { get; set; }
-        public short TreatCycle { get; set; }
+        public int TreatCycle { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Sin> Sins { get; set; }
     }
 }

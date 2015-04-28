@@ -14,8 +14,22 @@ namespace EntityFrameworkDAL
     
     public partial class Sin
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Sin()
+        {
+            this.Sinners = new HashSet<Sinner>();
+        }
+    
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Points { get; set; }
+        public int PunishmentId { get; set; }
+        public int PunisherId { get; set; }
+        public Nullable<int> SinDegreeId { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Sinner> Sinners { get; set; }
+        public virtual Punishment Punishment { get; set; }
+        public virtual Punisher Punisher { get; set; }
+        public virtual SinDegree SinDegree { get; set; }
     }
 }
