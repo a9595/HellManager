@@ -33,8 +33,6 @@
 			this.sinnerBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.surnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.badColumnDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.sinsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).BeginInit();
@@ -47,13 +45,11 @@
 			this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
-            this.surnameDataGridViewTextBoxColumn,
-            this.badColumnDataGridViewTextBoxColumn,
             this.sinsDataGridViewTextBoxColumn});
 			this.dataGridView1.DataSource = this.sinnerBindingSource;
-			this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+			this.dataGridView1.Location = new System.Drawing.Point(12, 12);
 			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(723, 366);
+			this.dataGridView1.Size = new System.Drawing.Size(467, 150);
 			this.dataGridView1.TabIndex = 0;
 			// 
 			// sinnerBindingSource
@@ -71,18 +67,6 @@
 			this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
 			this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
 			this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-			// 
-			// surnameDataGridViewTextBoxColumn
-			// 
-			this.surnameDataGridViewTextBoxColumn.DataPropertyName = "Surname";
-			this.surnameDataGridViewTextBoxColumn.HeaderText = "Surname";
-			this.surnameDataGridViewTextBoxColumn.Name = "surnameDataGridViewTextBoxColumn";
-			// 
-			// badColumnDataGridViewTextBoxColumn
-			// 
-			this.badColumnDataGridViewTextBoxColumn.DataPropertyName = "BadColumn";
-			this.badColumnDataGridViewTextBoxColumn.HeaderText = "BadColumn";
-			this.badColumnDataGridViewTextBoxColumn.Name = "badColumnDataGridViewTextBoxColumn";
 			// 
 			// sinsDataGridViewTextBoxColumn
 			// 
@@ -110,8 +94,6 @@
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn surnameDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn badColumnDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn sinsDataGridViewTextBoxColumn;
 		private System.Windows.Forms.BindingSource sinnerBindingSource;
 	}

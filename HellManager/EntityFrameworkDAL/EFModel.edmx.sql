@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 04/27/2015 20:20:43
+-- Date Created: 04/28/2015 02:16:59
 -- Generated from EDMX file: C:\Users\Andrii\Documents\GitHub\HellManager\HellManager\EntityFrameworkDAL\EFModel.edmx
 -- --------------------------------------------------
 
@@ -63,9 +63,7 @@ GO
 -- Creating table 'Sinners'
 CREATE TABLE [dbo].[Sinners] (
     [Id] int IDENTITY(1,1) NOT NULL,
-    [Name] nvarchar(32)  NOT NULL,
-    [Surname] nvarchar(max)  NOT NULL,
-    [BadColumn] nvarchar(max)  NOT NULL
+    [Name] nvarchar(32)  NOT NULL
 );
 GO
 

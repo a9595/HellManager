@@ -39,8 +39,6 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="32" />
-    <Property Name="Surname" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="BadColumn" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="Sins">
     <Key>
@@ -176,8 +174,6 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" MaxLength="32" />
           <NavigationProperty Name="Sins" Relationship="EFModel.SinnerSin" FromRole="Sinner" ToRole="Sin" />
-          <Property Name="Surname" Type="String" Nullable="false" />
-          <Property Name="BadColumn" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="Sin">
           <Key>
@@ -269,8 +265,6 @@
         <MappingFragment StoreEntitySet="Sinners">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Surname" ColumnName="Surname" />
-          <ScalarProperty Name="BadColumn" ColumnName="BadColumn" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
