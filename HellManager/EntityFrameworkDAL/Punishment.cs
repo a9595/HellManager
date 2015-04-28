@@ -9,10 +9,9 @@
 
 namespace EntityFrameworkDAL
 {
-    using System;
-    using System.Collections.Generic;
-    
-    public partial class Punishment
+	using System.Collections.Generic;
+
+	public partial class Punishment
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Punishment()

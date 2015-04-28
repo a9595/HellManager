@@ -20,6 +20,24 @@ namespace HellManager
 			sinnerBindingSource.DataSource = _context.Sinners.ToList();
 			sinBindingSource.DataSource = _context.Sins.ToList();
 
+
+
+
+			var dtos = from sinner in _context.Sinners
+					   from sin in sinner.Sins
+					   select new SinsDTO()
+					   {
+						   Sinner = sinner.FullName,
+						   Sins = sin.Name
+					   };
+			
 		}
 	}
+	public class SinsDTO
+	{
+		public string Sinner { get; set; }
+		public string Sins { get; set; }
+	}
+
+
 }

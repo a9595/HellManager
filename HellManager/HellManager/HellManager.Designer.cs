@@ -50,6 +50,7 @@
 			this.punishmentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.punisherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.sinDegreeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.sinnerSinsDataGridView = new System.Windows.Forms.DataGridView();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			this.tabPage2.SuspendLayout();
@@ -57,6 +58,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinsDataGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsDataGridView)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tabControl1
@@ -71,6 +73,7 @@
 			// 
 			// tabPage1
 			// 
+			this.tabPage1.Controls.Add(this.sinnerSinsDataGridView);
 			this.tabPage1.Controls.Add(this.sinnersDataGridView);
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
 			this.tabPage1.Name = "tabPage1";
@@ -219,6 +222,14 @@
 			this.sinDegreeDataGridViewTextBoxColumn.HeaderText = "SinDegree";
 			this.sinDegreeDataGridViewTextBoxColumn.Name = "sinDegreeDataGridViewTextBoxColumn";
 			// 
+			// sinnerSinsDataGridView
+			// 
+			this.sinnerSinsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.sinnerSinsDataGridView.Location = new System.Drawing.Point(275, 348);
+			this.sinnerSinsDataGridView.Name = "sinnerSinsDataGridView";
+			this.sinnerSinsDataGridView.Size = new System.Drawing.Size(530, 163);
+			this.sinnerSinsDataGridView.TabIndex = 1;
+			// 
 			// HellManager
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,6 +245,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinsDataGridView)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsDataGridView)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -261,5 +273,6 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn punisherDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn sinDegreeDataGridViewTextBoxColumn;
 		private System.Windows.Forms.BindingSource sinBindingSource;
+		private System.Windows.Forms.DataGridView sinnerSinsDataGridView;
 	}
 }
