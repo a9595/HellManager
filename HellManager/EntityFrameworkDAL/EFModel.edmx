@@ -109,7 +109,6 @@
           <EntitySet Name="Punishments" EntityType="EFModel.Punishment" />
           <EntitySet Name="Punishers" EntityType="EFModel.Punisher" />
           <EntitySet Name="PunisherRanks" EntityType="EFModel.PunisherRank" />
-          <EntitySet Name="DegreeSins" EntityType="EFModel.DegreeSin" />
         </EntityContainer>
         <EntityType Name="Sinner">
           <Key>
@@ -147,13 +146,6 @@
           <Property Name="Phone" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="PunisherRank">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" Nullable="false" />
-        </EntityType>
-        <EntityType Name="DegreeSin">
           <Key>
             <PropertyRef Name="Id" />
           </Key>

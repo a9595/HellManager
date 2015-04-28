@@ -30,6 +30,5 @@ namespace EntityFrameworkDAL
         public virtual DbSet<Punishment> Punishments { get; set; }
         public virtual DbSet<Punisher> Punishers { get; set; }
         public virtual DbSet<PunisherRank> PunisherRanks { get; set; }
-        public virtual DbSet<DegreeSin> DegreeSins { get; set; }
     }
 }

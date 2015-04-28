@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using EntityFrameworkDAL;
 
 namespace HellManager
 {
@@ -18,16 +14,9 @@ namespace HellManager
 			//InitializeDb();
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Form1());
 
 		}
 
-		private static void InitializeDb()
-		{
-			using (var ctx = new EFModelContainer())
-			{
-				new DBInitializer().InitializeDatabase(ctx);
-			}
-		}
+		
 	}
 }
