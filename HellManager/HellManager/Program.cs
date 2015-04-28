@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Telerik.WinControls.UI;
 
 namespace HellManager
 {
@@ -14,7 +15,7 @@ namespace HellManager
 			//InitializeDb();
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-
+			Application.Run(new HellManager());
 		}
 
 		
