@@ -6,11 +6,14 @@
     <edmx:Diagrams>
       <Diagram DiagramId="8d5728d32afd4ccf8daf36fc9e32db1a" Name="Diagram1" DisplayType="true" >
         <EntityTypeShape EntityType="EFModel.Sinner" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="EFModel.Sin" Width="1.5" PointX="5.375" PointY="1.375" />
-        <EntityTypeShape EntityType="EFModel.Punishment" Width="1.5" PointX="0.5" PointY="5.125" />
-        <EntityTypeShape EntityType="EFModel.Punisher" Width="1.5" PointX="5.375" PointY="4.625" />
-        <AssociationConnector Association="EFModel.PunisherPunishment" />
+        <EntityTypeShape EntityType="EFModel.Sin" Width="3.125" PointX="3.75" PointY="2.125" />
+        <EntityTypeShape EntityType="EFModel.Punishment" Width="1.5" PointX="1.375" PointY="6" />
+        <EntityTypeShape EntityType="EFModel.Punisher" Width="1.5" PointX="6" PointY="4.625" />
         <AssociationConnector Association="EFModel.SinPunishment" />
+        <AssociationConnector Association="EFModel.PunishmentPunisher" />
+        <AssociationConnector Association="EFModel.SinnerSin" />
+        <EntityTypeShape EntityType="EFModel.PunisherRank" Width="1.5" PointX="9.25" PointY="4.875" />
+        <AssociationConnector Association="EFModel.PunisherPunisherRank" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
