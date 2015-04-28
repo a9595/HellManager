@@ -18,7 +18,8 @@ namespace HellManager
 		{
 			InitializeComponent();
 			sinnerBindingSource.DataSource = _context.Sinners.ToList();
-			
+			sinBindingSource.DataSource = _context.Sins.ToList();
+
 		}
 	}
 }
