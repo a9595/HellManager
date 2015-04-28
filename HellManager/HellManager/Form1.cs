@@ -16,12 +16,22 @@ namespace HellManager
 		public Form1()
 		{
 			InitializeComponent();
-			dataGridView1.DataSource = _context.Sinners.ToList();
+			SinnersDataGridView.DataSource = _context.Sinners.ToList();
+			comboBox1.DataSource = _context.Sins.ToList();
+
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
 
+		}
+
+		private void ButtonSaveChanges_Click(object sender, EventArgs e)
+		{
+			_context.SaveChanges();
+			//dataGridView1.Update();
+			SinnersDataGridView.Refresh();
+			comboBox1.Refresh();
 		}
 	}
 }
