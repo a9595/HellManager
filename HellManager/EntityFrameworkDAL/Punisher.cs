@@ -14,19 +14,8 @@ namespace EntityFrameworkDAL
     
     public partial class Punisher
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Punisher()
-        {
-            this.Punishments = new HashSet<Punishment>();
-        }
-    
         public int Id { get; set; }
         public string Name { get; set; }
-        public int PunishmentId { get; set; }
-        public int PunisherRankId { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Punishment> Punishments { get; set; }
-        public virtual PunisherRank Rank { get; set; }
+        public string Phone { get; set; }
     }
 }

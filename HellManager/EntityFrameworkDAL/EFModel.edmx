@@ -11,7 +11,6 @@
     <EntitySet Name="Punishments" EntityType="EFModel.Store.Punishments" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Punishers" EntityType="EFModel.Store.Punishers" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="PunisherRanks" EntityType="EFModel.Store.PunisherRanks" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="SinnerSin" EntityType="EFModel.Store.SinnerSin" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="SinPunishment" Association="EFModel.Store.SinPunishment">
       <End Role="Sin" EntitySet="Sins" />
       <End Role="Punishment" EntitySet="Punishments" />
@@ -19,14 +18,6 @@
     <AssociationSet Name="PunishmentPunisher" Association="EFModel.Store.PunishmentPunisher">
       <End Role="Punishment" EntitySet="Punishments" />
       <End Role="Punisher" EntitySet="Punishers" />
-    </AssociationSet>
-    <AssociationSet Name="FK_SinnerSin_Sinner" Association="EFModel.Store.FK_SinnerSin_Sinner">
-      <End Role="Sinner" EntitySet="Sinners" />
-      <End Role="SinnerSin" EntitySet="SinnerSin" />
-    </AssociationSet>
-    <AssociationSet Name="FK_SinnerSin_Sin" Association="EFModel.Store.FK_SinnerSin_Sin">
-      <End Role="Sin" EntitySet="Sins" />
-      <End Role="SinnerSin" EntitySet="SinnerSin" />
     </AssociationSet>
     <AssociationSet Name="PunisherPunisherRank" Association="EFModel.Store.PunisherPunisherRank">
       <End Role="Punisher" EntitySet="Punishers" />
@@ -72,14 +63,6 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
-  <EntityType Name="SinnerSin">
-    <Key>
-      <PropertyRef Name="Sinners_Id" />
-      <PropertyRef Name="Sins_Id" />
-    </Key>
-    <Property Name="Sinners_Id" Type="int" Nullable="false" />
-    <Property Name="Sins_Id" Type="int" Nullable="false" />
-  </EntityType>
   <Association Name="SinPunishment">
     <End Role="Sin" Type="EFModel.Store.Sins" Multiplicity="*" />
     <End Role="Punishment" Type="EFModel.Store.Punishments" Multiplicity="1" />
@@ -116,31 +99,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_SinnerSin_Sinner">
-    <End Role="Sinner" Type="EFModel.Store.Sinners" Multiplicity="1" />
-    <End Role="SinnerSin" Type="EFModel.Store.SinnerSin" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Sinner">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="SinnerSin">
-        <PropertyRef Name="Sinners_Id" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_SinnerSin_Sin">
-    <End Role="SinnerSin" Type="EFModel.Store.SinnerSin" Multiplicity="*" />
-    <End Role="Sin" Type="EFModel.Store.Sins" Multiplicity="1" />
-    <ReferentialConstraint>
-      <Principal Role="Sin">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="SinnerSin">
-        <PropertyRef Name="Sins_Id" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-</Schema></edmx:StorageModels>
+  </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EFModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
@@ -149,23 +108,8 @@
           <EntitySet Name="Sins" EntityType="EFModel.Sin" />
           <EntitySet Name="Punishments" EntityType="EFModel.Punishment" />
           <EntitySet Name="Punishers" EntityType="EFModel.Punisher" />
-          <AssociationSet Name="SinPunishment" Association="EFModel.SinPunishment">
-            <End Role="Sin" EntitySet="Sins" />
-            <End Role="Punishment" EntitySet="Punishments" />
-          </AssociationSet>
-          <AssociationSet Name="PunishmentPunisher" Association="EFModel.PunishmentPunisher">
-            <End Role="Punishment" EntitySet="Punishments" />
-            <End Role="Punisher" EntitySet="Punishers" />
-          </AssociationSet>
-          <AssociationSet Name="SinnerSin" Association="EFModel.SinnerSin">
-            <End Role="Sinner" EntitySet="Sinners" />
-            <End Role="Sin" EntitySet="Sins" />
-          </AssociationSet>
           <EntitySet Name="PunisherRanks" EntityType="EFModel.PunisherRank" />
-          <AssociationSet Name="PunisherPunisherRank" Association="EFModel.PunisherPunisherRank">
-            <End Role="Punisher" EntitySet="Punishers" />
-            <End Role="PunisherRank" EntitySet="PunisherRanks" />
-          </AssociationSet>
+          <EntitySet Name="DegreeSins" EntityType="EFModel.DegreeSin" />
         </EntityContainer>
         <EntityType Name="Sinner">
           <Key>
@@ -173,7 +117,10 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" MaxLength="32" />
-          <NavigationProperty Name="Sins" Relationship="EFModel.SinnerSin" FromRole="Sinner" ToRole="Sin" />
+          <Property Name="Age" Type="String" Nullable="false" />
+          <Property Name="JobTitle" Type="String" Nullable="false" />
+          <Property Name="Salary" Type="String" Nullable="false" />
+          <Property Name="Gender" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="Sin">
           <Key>
@@ -181,9 +128,7 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" />
-          <NavigationProperty Name="Punishment" Relationship="EFModel.SinPunishment" FromRole="Sin" ToRole="Punishment" />
-          <Property Name="PunishmentId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Sinners" Relationship="EFModel.SinnerSin" FromRole="Sin" ToRole="Sinner" />
+          <Property Name="Points" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="Punishment">
           <Key>
@@ -192,9 +137,6 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="TreatCycle" Type="Int16" Nullable="false" />
-          <NavigationProperty Name="Sins" Relationship="EFModel.SinPunishment" FromRole="Punishment" ToRole="Sin" />
-          <NavigationProperty Name="Punisher" Relationship="EFModel.PunishmentPunisher" FromRole="Punishment" ToRole="Punisher" />
-          <Property Name="PunisherId" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Punisher">
           <Key>
@@ -202,58 +144,22 @@
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" />
-          <Property Name="PunishmentId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Punishments" Relationship="EFModel.PunishmentPunisher" FromRole="Punisher" ToRole="Punishment" />
-          <NavigationProperty Name="Rank" Relationship="EFModel.PunisherPunisherRank" FromRole="Punisher" ToRole="PunisherRank" />
-          <Property Name="PunisherRankId" Type="Int32" Nullable="false" />
+          <Property Name="Phone" Type="String" Nullable="false" />
         </EntityType>
-        <Association Name="SinPunishment">
-          <End Type="EFModel.Sin" Role="Sin" Multiplicity="*" />
-          <End Type="EFModel.Punishment" Role="Punishment" Multiplicity="1" />
-          <ReferentialConstraint>
-            <Principal Role="Punishment">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Sin">
-              <PropertyRef Name="PunishmentId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="PunishmentPunisher">
-          <End Type="EFModel.Punishment" Role="Punishment" Multiplicity="*" />
-          <End Type="EFModel.Punisher" Role="Punisher" Multiplicity="1" />
-          <ReferentialConstraint>
-            <Principal Role="Punisher">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Punishment">
-              <PropertyRef Name="PunisherId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="SinnerSin">
-          <End Type="EFModel.Sinner" Role="Sinner" Multiplicity="*" />
-          <End Type="EFModel.Sin" Role="Sin" Multiplicity="*" />
-        </Association>
         <EntityType Name="PunisherRank">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <NavigationProperty Name="Punishers" Relationship="EFModel.PunisherPunisherRank" FromRole="PunisherRank" ToRole="Punisher" />
+          <Property Name="Name" Type="String" Nullable="false" />
         </EntityType>
-        <Association Name="PunisherPunisherRank">
-          <End Type="EFModel.Punisher" Role="Punisher" Multiplicity="*" />
-          <End Type="EFModel.PunisherRank" Role="PunisherRank" Multiplicity="1" />
-          <ReferentialConstraint>
-            <Principal Role="PunisherRank">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Punisher">
-              <PropertyRef Name="PunisherRankId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
+        <EntityType Name="DegreeSin">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -273,7 +179,6 @@
         <MappingFragment StoreEntitySet="Sins">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="PunishmentId" ColumnName="PunishmentId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -283,7 +188,6 @@
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="TreatCycle" ColumnName="TreatCycle" />
-          <ScalarProperty Name="PunisherId" ColumnName="PunisherId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -292,8 +196,6 @@
         <MappingFragment StoreEntitySet="Punishers">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="PunishmentId" ColumnName="PunishmentId" />
-          <ScalarProperty Name="PunisherRankId" ColumnName="PunisherRankId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -304,14 +206,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="SinnerSin" TypeName="EFModel.SinnerSin" StoreEntitySet="SinnerSin">
-      <EndProperty Name="Sinner">
-        <ScalarProperty Name="Id" ColumnName="Sinners_Id" />
-      </EndProperty>
-      <EndProperty Name="Sin">
-        <ScalarProperty Name="Id" ColumnName="Sins_Id" />
-      </EndProperty>
-    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping></edmx:Mappings>
   </edmx:Runtime>

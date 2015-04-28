@@ -12,13 +12,8 @@ namespace EntityFrameworkDAL
 		private readonly List<Sinner> _sinners = new List<Sinner>(); 
 		public DBInitializer()
 		{
-			_sinners.Add(new Sinner("Bob"));
-			_sinners.Add(new Sinner("Bob"));
-			_sinners.Add(new Sinner("Bob"));
-			_sinners.Add(new Sinner("Bob"));
-			_sinners.Add(new Sinner("Bob"));
-			_sinners.Add(new Sinner("Bob"));
-			_sinners.Add(new Sinner("Bob"));
+			//_sinners.Add(new Sinner("Bob"));
+			
 		}
 
 		protected override void Seed(EFModelContainer context)

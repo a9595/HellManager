@@ -12,10 +12,9 @@ namespace EntityFrameworkDAL
     using System;
     using System.Collections.Generic;
     
-    public partial class Punishment
+    public partial class DegreeSin
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public short TreatCycle { get; set; }
     }
 }
