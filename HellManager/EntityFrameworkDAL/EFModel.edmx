@@ -71,7 +71,6 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="256" />
     <Property Name="TreatCycle" Type="int" Nullable="false" />
-    <Property Name="PunisherId" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Punishers">
     <Key>
@@ -80,8 +79,7 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="32" />
     <Property Name="Phone" Type="nvarchar" Nullable="true" MaxLength="32" />
-    <Property Name="PunisherRankId" Type="int" Nullable="false" />
-    <Property Name="PunisherRankId1" Type="int" Nullable="true" />
+    <Property Name="PunisherRankId" Type="int" Nullable="true" />
   </EntityType>
   <EntityType Name="PunisherRanks">
     <Key>
@@ -157,7 +155,7 @@
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Punisher">
-        <PropertyRef Name="PunisherRankId1" />
+        <PropertyRef Name="PunisherRankId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -414,7 +412,7 @@
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Phone" ColumnName="Phone" />
-          <ScalarProperty Name="PunisherRankId" ColumnName="PunisherRankId1" />
+          <ScalarProperty Name="PunisherRankId" ColumnName="PunisherRankId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
