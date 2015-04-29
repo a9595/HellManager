@@ -10,15 +10,14 @@ namespace HellManager
 {
 	public partial class HellManager : Form
 	{
-		readonly EFModelContainer _context = new EFModelContainer();
-		private Dictionary<Punishment, IEnumerable<Sin>> _groupSins;
+		private readonly EFModelContainer _context = new EFModelContainer();
 
 		public HellManager()
 		{
 			InitializeComponent();
 			SetDataSources();
 
-			//GetPunishmentSins();
+			
 
 
 		}
@@ -30,52 +29,25 @@ namespace HellManager
 			punishmentBindingSource.DataSource = _context.Punishments.ToList();
 		}
 
-		public void GetPunishmentSins()
-		{
-			var matchingSins = _context.Punishments.GroupJoin(_context.Sins, punishment => punishment.Id,
-				sin => sin.PunishmentId,
-				(punishment, availableSins) => new { punishment, sins = availableSins });
-			_groupSins = matchingSins.ToDictionary(x => x.punishment, y => y.sins);
-
-
-			punishmentBindingSource.DataSource = _groupSins.Keys;
-
-		}
+		
 
 		
 		private void punishmentBindingSource_CurrentChanged(object sender, EventArgs e)
 		{
-			/*Punishment currentPunishment = punishmentBindingSource.Current as Punishment;
-			if (currentPunishment != null) punishmentSinsBindingSource.DataSource = currentPunishment.Sins.ToList();
-
-			//punishmentSinsBindingSource.DataSource = _groupSins[(Punishment)punishmentBindingSource.Current];
-			var dataSource = punishmentSinsGridView.DataSource;
-			//punishmentSinsGridView.DataSource = _groupSins[(Punishment)punishmentBindingSource.Current];
-			
-
-			//dataGridView1.DataSource = _groupSins[(Punishment) punishmentBindingSource.Current];
-			dataGridView1.Refresh();
-			dataGridView1.Update();
-			dataGridView1.ResetBindings();
-
-			
-			dataGridView1.DataSource = punishmentSinsBindingSource;
-			punishmentSinsBindingSource.ResetBindings(false);*/
-
-			Punishment currentPunishment = punishmentBindingSource.Current as Punishment;
-			if (currentPunishment == null) return;
-			punishmentSinsBindingSource.DataSource = currentPunishment.Sins.ToList();
+			Punishment selectedPunishment = punishmentBindingSource.Current as Punishment;
+			if (selectedPunishment == null) return;
+			punishmentSinsBindingSource.DataSource = selectedPunishment.Sins.ToList();
 		}
 
 		private void sinnerBindingSource_CurrentChanged(object sender, EventArgs e)
 		{
-			Sinner sinner = sinnerBindingSource.Current as Sinner;
-			if (sinner == null) return;
-			sinnerSinsBindingSource.DataSource = sinner.Sins.ToList();
+			Sinner selectedSinner = sinnerBindingSource.Current as Sinner;
+			if (selectedSinner == null) return;
+			sinnerSinsBindingSource.DataSource = selectedSinner.Sins.ToList();
 
 
-			dataGridView1.DataSource = sinnerSinsBindingSource;
-			sinnerSinsBindingSource.ResetBindings(false);
+			sinnerSinsDataGridView.DataSource = sinnerSinsBindingSource;
+			sinnerSinsBindingSource.ResetBindings(false); //update gv
 
 		}
 
@@ -98,6 +70,27 @@ namespace HellManager
 		{
 
 		}
+
+		private void sinnerSinsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+
+		private void tabPage1_Click(object sender, EventArgs e)
+		{
+
+		}
+		/*public void GetPunishmentSins()
+{
+var matchingSins = _context.Punishments.GroupJoin(_context.Sins, punishment => punishment.Id,
+sin => sin.PunishmentId,
+(punishment, availableSins) => new { punishment, sins = availableSins });
+_groupSins = matchingSins.ToDictionary(x => x.punishment, y => y.sins);
+
+
+punishmentBindingSource.DataSource = _groupSins.Keys;
+
+}*/
 
 	}
 

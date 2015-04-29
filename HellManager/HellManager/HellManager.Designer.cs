@@ -29,19 +29,22 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn5 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn6 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
-			this.sinBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.sinnerSinsDataGridView = new System.Windows.Forms.DataGridView();
+			this.punishmentSinsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.sinnerSinsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.label3 = new System.Windows.Forms.Label();
 			this.sinnersDataGridView = new System.Windows.Forms.DataGridView();
 			this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,36 +63,30 @@
 			this.punishmentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.punisherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.sinDegreeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.sinBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.tabPage3 = new System.Windows.Forms.TabPage();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
 			this.punishmentSinsGridView = new Telerik.WinControls.UI.RadGridView();
 			this.punishmentsGridView = new Telerik.WinControls.UI.RadGridView();
-			this.sinnerSinsBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.punishmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.tabPage4 = new System.Windows.Forms.TabPage();
-			this.punishmentSinsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
-			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsDataGridView)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnersDataGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).BeginInit();
 			this.tabPage2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.sinsDataGridView)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).BeginInit();
 			this.tabPage3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsGridView)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsGridView.MasterTemplate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentsGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentsGridView.MasterTemplate)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tabControl1
@@ -106,8 +103,7 @@
 			// 
 			// tabPage1
 			// 
-			this.tabPage1.Controls.Add(this.dataGridView1);
-			this.tabPage1.Controls.Add(this.radGridView1);
+			this.tabPage1.Controls.Add(this.sinnerSinsDataGridView);
 			this.tabPage1.Controls.Add(this.label3);
 			this.tabPage1.Controls.Add(this.sinnersDataGridView);
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -117,22 +113,41 @@
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "Sinners";
 			this.tabPage1.UseVisualStyleBackColor = true;
+			this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
 			// 
-			// sinBindingSource
+			// sinnerSinsDataGridView
 			// 
-			this.sinBindingSource.DataSource = typeof(EntityFrameworkDAL.Sin);
+			this.sinnerSinsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.sinnerSinsDataGridView.Location = new System.Drawing.Point(9, 297);
+			this.sinnerSinsDataGridView.Name = "sinnerSinsDataGridView";
+			this.sinnerSinsDataGridView.Size = new System.Drawing.Size(780, 227);
+			this.sinnerSinsDataGridView.TabIndex = 5;
+			this.sinnerSinsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sinnerSinsDataGridView_CellContentClick);
+			// 
+			// punishmentSinsBindingSource
+			// 
+			this.punishmentSinsBindingSource.CurrentChanged += new System.EventHandler(this.punishmentSinsBindingSource_CurrentChanged);
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(6, 281);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(128, 13);
+			this.label3.TabIndex = 2;
+			this.label3.Text = "Sins of selected punisher:";
 			// 
 			// sinnersDataGridView
 			// 
 			this.sinnersDataGridView.AutoGenerateColumns = false;
-			dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.sinnersDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.sinnersDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this.sinnersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.sinnersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.fullNameDataGridViewTextBoxColumn,
@@ -141,25 +156,25 @@
             this.salaryDataGridViewTextBoxColumn,
             this.genderDataGridViewTextBoxColumn});
 			this.sinnersDataGridView.DataSource = this.sinnerBindingSource;
-			dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-			dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.sinnersDataGridView.DefaultCellStyle = dataGridViewCellStyle14;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.sinnersDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
 			this.sinnersDataGridView.Location = new System.Drawing.Point(6, 6);
 			this.sinnersDataGridView.Name = "sinnersDataGridView";
-			dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.sinnersDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
-			this.sinnersDataGridView.Size = new System.Drawing.Size(570, 247);
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.sinnersDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			this.sinnersDataGridView.Size = new System.Drawing.Size(783, 247);
 			this.sinnersDataGridView.TabIndex = 0;
 			this.sinnersDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sinnersDataGridView_CellContentClick);
 			// 
@@ -212,14 +227,14 @@
 			// sinsDataGridView
 			// 
 			this.sinsDataGridView.AutoGenerateColumns = false;
-			dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.sinsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.sinsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this.sinsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.sinsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -232,24 +247,24 @@
             this.punisherDataGridViewTextBoxColumn,
             this.sinDegreeDataGridViewTextBoxColumn});
 			this.sinsDataGridView.DataSource = this.sinBindingSource;
-			dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.ControlText;
-			dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.sinsDataGridView.DefaultCellStyle = dataGridViewCellStyle17;
+			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.sinsDataGridView.DefaultCellStyle = dataGridViewCellStyle5;
 			this.sinsDataGridView.Location = new System.Drawing.Point(6, 6);
 			this.sinsDataGridView.Name = "sinsDataGridView";
-			dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.sinsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.sinsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this.sinsDataGridView.Size = new System.Drawing.Size(810, 294);
 			this.sinsDataGridView.TabIndex = 0;
 			// 
@@ -307,6 +322,10 @@
 			this.sinDegreeDataGridViewTextBoxColumn.HeaderText = "SinDegree";
 			this.sinDegreeDataGridViewTextBoxColumn.Name = "sinDegreeDataGridViewTextBoxColumn";
 			// 
+			// sinBindingSource
+			// 
+			this.sinBindingSource.DataSource = typeof(EntityFrameworkDAL.Sin);
+			// 
 			// tabPage3
 			// 
 			this.tabPage3.AutoScroll = true;
@@ -322,13 +341,30 @@
 			this.tabPage3.Text = "Punishments";
 			this.tabPage3.UseVisualStyleBackColor = true;
 			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(6, 240);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(142, 13);
+			this.label2.TabIndex = 3;
+			this.label2.Text = "Sins of selected punishment:";
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(6, 235);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(0, 13);
+			this.label1.TabIndex = 2;
+			// 
 			// punishmentSinsGridView
 			// 
 			this.punishmentSinsGridView.Location = new System.Drawing.Point(9, 256);
 			// 
 			// 
 			// 
-			this.radGridView1.MasterTemplate.DataSource = this.punishmentSinsBindingSource;
+			this.punishmentSinsGridView.MasterTemplate.DataSource = this.punishmentSinsBindingSource;
 			this.punishmentSinsGridView.Name = "punishmentSinsGridView";
 			this.punishmentSinsGridView.Size = new System.Drawing.Size(327, 255);
 			this.punishmentSinsGridView.TabIndex = 1;
@@ -340,30 +376,30 @@
 			// 
 			// 
 			// 
-			gridViewDecimalColumn5.DataType = typeof(int);
-			gridViewDecimalColumn5.FieldName = "Id";
-			gridViewDecimalColumn5.HeaderText = "Id";
-			gridViewDecimalColumn5.IsAutoGenerated = true;
-			gridViewDecimalColumn5.Name = "Id";
-			gridViewTextBoxColumn5.FieldName = "Name";
-			gridViewTextBoxColumn5.HeaderText = "Name";
-			gridViewTextBoxColumn5.IsAutoGenerated = true;
-			gridViewTextBoxColumn5.Name = "Name";
-			gridViewDecimalColumn6.DataType = typeof(int);
-			gridViewDecimalColumn6.FieldName = "TreatCycle";
-			gridViewDecimalColumn6.HeaderText = "TreatCycle";
-			gridViewDecimalColumn6.IsAutoGenerated = true;
-			gridViewDecimalColumn6.Name = "TreatCycle";
-			gridViewTextBoxColumn6.DataType = typeof(System.Collections.Generic.ICollection<EntityFrameworkDAL.Sin>);
-			gridViewTextBoxColumn6.FieldName = "Sins";
-			gridViewTextBoxColumn6.HeaderText = "Sins";
-			gridViewTextBoxColumn6.IsAutoGenerated = true;
-			gridViewTextBoxColumn6.Name = "Sins";
+			gridViewDecimalColumn1.DataType = typeof(int);
+			gridViewDecimalColumn1.FieldName = "Id";
+			gridViewDecimalColumn1.HeaderText = "Id";
+			gridViewDecimalColumn1.IsAutoGenerated = true;
+			gridViewDecimalColumn1.Name = "Id";
+			gridViewTextBoxColumn1.FieldName = "Name";
+			gridViewTextBoxColumn1.HeaderText = "Name";
+			gridViewTextBoxColumn1.IsAutoGenerated = true;
+			gridViewTextBoxColumn1.Name = "Name";
+			gridViewDecimalColumn2.DataType = typeof(int);
+			gridViewDecimalColumn2.FieldName = "TreatCycle";
+			gridViewDecimalColumn2.HeaderText = "TreatCycle";
+			gridViewDecimalColumn2.IsAutoGenerated = true;
+			gridViewDecimalColumn2.Name = "TreatCycle";
+			gridViewTextBoxColumn2.DataType = typeof(System.Collections.Generic.ICollection<EntityFrameworkDAL.Sin>);
+			gridViewTextBoxColumn2.FieldName = "Sins";
+			gridViewTextBoxColumn2.HeaderText = "Sins";
+			gridViewTextBoxColumn2.IsAutoGenerated = true;
+			gridViewTextBoxColumn2.Name = "Sins";
 			this.punishmentsGridView.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn5,
-            gridViewTextBoxColumn5,
-            gridViewDecimalColumn6,
-            gridViewTextBoxColumn6});
+            gridViewDecimalColumn1,
+            gridViewTextBoxColumn1,
+            gridViewDecimalColumn2,
+            gridViewTextBoxColumn2});
 			this.punishmentsGridView.MasterTemplate.DataSource = this.punishmentBindingSource;
 			this.punishmentsGridView.Name = "punishmentsGridView";
 			this.punishmentsGridView.Size = new System.Drawing.Size(669, 206);
@@ -385,56 +421,6 @@
 			this.tabPage4.Text = "Punishers";
 			this.tabPage4.UseVisualStyleBackColor = true;
 			// 
-			// punishmentSinsBindingSource
-			// 
-			this.punishmentSinsBindingSource.CurrentChanged += new System.EventHandler(this.punishmentSinsBindingSource_CurrentChanged);
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(6, 235);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(0, 13);
-			this.label1.TabIndex = 2;
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(6, 240);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(142, 13);
-			this.label2.TabIndex = 3;
-			this.label2.Text = "Sins of selected punishment:";
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(6, 281);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(128, 13);
-			this.label3.TabIndex = 2;
-			this.label3.Text = "Sins of selected punisher:";
-			// 
-			// radGridView1
-			// 
-			this.radGridView1.Location = new System.Drawing.Point(9, 297);
-			// 
-			// 
-			// 
-			this.radGridView1.MasterTemplate.DataSource = this.sinnerSinsBindingSource;
-			this.radGridView1.Name = "radGridView1";
-			this.radGridView1.Size = new System.Drawing.Size(567, 163);
-			this.radGridView1.TabIndex = 3;
-			this.radGridView1.Text = "radGridView1";
-			// 
-			// dataGridView1
-			// 
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(610, 281);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(432, 227);
-			this.dataGridView1.TabIndex = 5;
-			// 
 			// HellManager
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -447,23 +433,21 @@
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
 			this.tabPage1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsDataGridView)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnersDataGridView)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).EndInit();
 			this.tabPage2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.sinsDataGridView)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).EndInit();
 			this.tabPage3.ResumeLayout(false);
 			this.tabPage3.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsGridView.MasterTemplate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsGridView)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentsGridView.MasterTemplate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentsGridView)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -501,7 +485,6 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label3;
-		private Telerik.WinControls.UI.RadGridView radGridView1;
-		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.DataGridView sinnerSinsDataGridView;
 	}
 }
