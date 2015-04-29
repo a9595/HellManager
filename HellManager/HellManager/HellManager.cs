@@ -18,6 +18,13 @@ namespace HellManager
 			InitializeComponent();
 			SetDataSources();
 
+//
+//			radGridView1.Columns[0].IsVisible = false;
+//			radGridView1.Columns[2].IsVisible = false;
+//			radGridView1.Columns[3].IsVisible = false;
+//			radGridView1.Columns[4].IsVisible = false;
+//			radGridView1.Columns[0].IsVisible = false;
+
 			//addComboBoxCol();
 		}
 
@@ -37,21 +44,20 @@ namespace HellManager
 
 		private void SetDataSources()
 		{
-
 			_context.Sinners.Load();
+			_context.Sins.Load();
+			_context.Punishments.Load();
+			_context.Punishers.Load();
+
+
 			sinnerBindingSource.DataSource = _context.Sinners.Local.ToBindingList();
+			
+			sinBindingSource.DataSource = _context.Sins.Local.ToBindingList();
+			punishmentBindingSource.DataSource = _context.Punishments.Local.ToBindingList();
 
-
-
-			//sinnerBindingSource.DataSource = _context.Sinners.ToList();
-			sinBindingSource.DataSource = _context.Sins.ToList();
-			punishmentBindingSource.DataSource = _context.Punishments.ToList();
 			genderBindingSource.DataSource = _context.Genders.ToList();
-			sinnerSinsDataGridView.DataSource = sinnerSinsBindingSource;
-
-
-
-
+			radGridView1.DataSource = sinnerSinsBindingSource;
+			
 		}
 		private void saveChangesButton_Click(object sender, EventArgs e)
 		{
@@ -136,6 +142,33 @@ namespace HellManager
 		private void tabPage4_Click(object sender, EventArgs e)
 		{
 
+		}
+
+		private void sinnersDataGridView_DataError(object sender, DataGridViewDataErrorEventArgs e)
+		{
+			// you can obtain current editing value like this:
+			string value = null;
+			var ctl = sinnersDataGridView.EditingControl as DataGridViewTextBoxEditingControl;
+
+			if (ctl != null)
+				value = ctl.Text;
+
+			// you can obtain the current commited value
+			object current = sinnersDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
+			string message;
+			switch (e.ColumnIndex)
+			{
+				case 0:
+				case 1:
+					// bound to integer field
+					message = "the value should be a number";
+					break;
+				default:
+					message = "Invalid data";
+					break;
+			}
+
+			MessageBox.Show(message);
 		}
 
 
