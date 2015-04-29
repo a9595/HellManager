@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Entity;
 using System.Linq;
 using System.Windows.Forms;
 using EntityFrameworkDAL;
@@ -17,47 +18,66 @@ namespace HellManager
 			InitializeComponent();
 			SetDataSources();
 
+			//addComboBoxCol();
+		}
+
+		private void addComboBoxCol()
+		{
 			DataGridViewComboBoxColumn cmb = new DataGridViewComboBoxColumn();
 			cmb.DataSource = _context.Genders.ToList();
 			cmb.DisplayMember = "Name";
 			cmb.ValueMember = "Id";
 			cmb.DataPropertyName = "Id";
 			//sinnersDataGridView.Columns.Add(cmb);
-
+		}
+		private void toolStripButtonAddNewSinner_Click(object sender, EventArgs e)
+		{
 
 		}
 
 		private void SetDataSources()
 		{
-			sinnerBindingSource.DataSource = _context.Sinners.ToList();
+
+			_context.Sinners.Load();
+			sinnerBindingSource.DataSource = _context.Sinners.Local.ToBindingList();
+
+
+
+			//sinnerBindingSource.DataSource = _context.Sinners.ToList();
 			sinBindingSource.DataSource = _context.Sins.ToList();
 			punishmentBindingSource.DataSource = _context.Punishments.ToList();
 			genderBindingSource.DataSource = _context.Genders.ToList();
+			sinnerSinsDataGridView.DataSource = sinnerSinsBindingSource;
+
+
+
 
 		}
 		private void saveChangesButton_Click(object sender, EventArgs e)
 		{
 
-			Sinner sinner = new Sinner()
+
+			//_context.SaveChanges();
+
+
+			try
 			{
-				FullName = "Ania"
+				this.Validate();
+				sinnerBindingSource.EndEdit();
+				sinnersDataGridView.EndEdit();
+				MessageBox.Show("Update successful");
+				_context.SaveChanges();
+			}
+			catch (System.Exception ex)
+			{
+				MessageBox.Show("Update failed");
+			}
 
-			};
-			_context.Sinners.Add(sinner);
-			_context.SaveChanges();
 
+		}
 
-//			if (sinnersDataGridView.IsCurrentCellDirty || sinnersDataGridView.IsCurrentRowDirty)
-//			{
-//				sinnersDataGridView.CurrentRow?.DataGridView.EndEdit();
-//				sinnersDataGridView.EndEdit();
-//
-//				CurrencyManager cm = (CurrencyManager)sinnersDataGridView.BindingContext[sinnersDataGridView.DataSource, sinnersDataGridView.DataMember];
-//				cm.EndCurrentEdit();
-//
-//			}
-//			_context.SaveChanges();
-
+		private void sinnersDataGridView_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+		{
 
 		}
 
@@ -67,10 +87,8 @@ namespace HellManager
 			Sinner selectedSinner = sinnerBindingSource.Current as Sinner;
 			if (selectedSinner == null) return;
 			sinnerSinsBindingSource.DataSource = selectedSinner.Sins.ToList();
+			//sinnerSinsBindingSource.ResetBindings(false); //update gv
 
-
-			sinnerSinsDataGridView.DataSource = sinnerSinsBindingSource;
-			sinnerSinsBindingSource.ResetBindings(false); //update gv
 
 		}
 
@@ -83,7 +101,7 @@ namespace HellManager
 			punishmentSinsBindingSource.DataSource = selectedPunishment.Sins.ToList();
 		}
 
-		
+
 
 		private void sinnersDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
@@ -119,6 +137,9 @@ namespace HellManager
 		{
 
 		}
+
+
+
 
 
 		/*public void GetPunishmentSins()

@@ -39,16 +39,28 @@
 			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
 			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
 			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HellManager));
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.sinnerSinsDataGridView = new System.Windows.Forms.DataGridView();
-			this.punishmentSinsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.sinnerSinsBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.label3 = new System.Windows.Forms.Label();
 			this.sinnersDataGridView = new System.Windows.Forms.DataGridView();
-			this.sinnerBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.sinsDataGridView = new System.Windows.Forms.DataGridView();
+			this.tabPage3 = new System.Windows.Forms.TabPage();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.punishmentSinsGridView = new Telerik.WinControls.UI.RadGridView();
+			this.punishmentsGridView = new Telerik.WinControls.UI.RadGridView();
+			this.tabPage4 = new System.Windows.Forms.TabPage();
+			this.Gender = new System.Windows.Forms.DataGridViewComboBoxColumn();
+			this.saveChangesButton = new Telerik.WinControls.UI.RadButton();
+			this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.jobTitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.salaryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.genderBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.sinnerBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.punishmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,40 +71,52 @@
 			this.punisherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.sinDegreeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.sinBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.tabPage3 = new System.Windows.Forms.TabPage();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
-			this.punishmentSinsGridView = new Telerik.WinControls.UI.RadGridView();
-			this.punishmentsGridView = new Telerik.WinControls.UI.RadGridView();
+			this.punishmentSinsBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.punishmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.tabPage4 = new System.Windows.Forms.TabPage();
-			this.genderBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.jobTitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.salaryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Gender = new System.Windows.Forms.DataGridViewComboBoxColumn();
-			this.saveChangesButton = new Telerik.WinControls.UI.RadButton();
+			this.sinnerSinsBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.punisherBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+			this.toolStripButtonAddNewSinner = new System.Windows.Forms.ToolStripButton();
+			this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+			this.radBindingNavigator1 = new Telerik.WinControls.UI.RadBindingNavigator();
+			this.radBindingNavigator1RowElement = new Telerik.WinControls.UI.CommandBarRowElement();
+			this.radBindingNavigator1FirstStrip = new Telerik.WinControls.UI.CommandBarStripElement();
+			this.radBindingNavigator1MoveFirstItem = new Telerik.WinControls.UI.CommandBarButton();
+			this.radBindingNavigator1MovePreviousItem = new Telerik.WinControls.UI.CommandBarButton();
+			this.radBindingNavigator1PositionItem = new Telerik.WinControls.UI.CommandBarTextBox();
+			this.radBindingNavigator1CountItem = new Telerik.WinControls.UI.CommandBarLabel();
+			this.radBindingNavigator1MoveNextItem = new Telerik.WinControls.UI.CommandBarButton();
+			this.radBindingNavigator1MoveLastItem = new Telerik.WinControls.UI.CommandBarButton();
+			this.commandBarSeparator1 = new Telerik.WinControls.UI.CommandBarSeparator();
+			this.commandBarSeparator2 = new Telerik.WinControls.UI.CommandBarSeparator();
+			this.commandBarSeparator3 = new Telerik.WinControls.UI.CommandBarSeparator();
+			this.commandBarSeparator4 = new Telerik.WinControls.UI.CommandBarSeparator();
+			this.radBindingNavigator1SecondStrip = new Telerik.WinControls.UI.CommandBarStripElement();
+			this.radBindingNavigator1AddNewItem = new Telerik.WinControls.UI.CommandBarButton();
+			this.radBindingNavigator1DeleteItem = new Telerik.WinControls.UI.CommandBarButton();
+			this.commandBarSeparator5 = new Telerik.WinControls.UI.CommandBarSeparator();
+			this.commandBarRowElement1 = new Telerik.WinControls.UI.CommandBarRowElement();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsDataGridView)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnersDataGridView)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).BeginInit();
 			this.tabPage2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.sinsDataGridView)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).BeginInit();
 			this.tabPage3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsGridView.MasterTemplate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentsGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentsGridView.MasterTemplate)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.punishmentBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.genderBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.saveChangesButton)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.genderBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.punishmentBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.punisherBindingSource)).BeginInit();
+			this.toolStrip1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.radBindingNavigator1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tabControl1
@@ -110,6 +134,8 @@
 			// tabPage1
 			// 
 			this.tabPage1.AutoScroll = true;
+			this.tabPage1.Controls.Add(this.radBindingNavigator1);
+			this.tabPage1.Controls.Add(this.toolStrip1);
 			this.tabPage1.Controls.Add(this.saveChangesButton);
 			this.tabPage1.Controls.Add(this.sinnerSinsDataGridView);
 			this.tabPage1.Controls.Add(this.label3);
@@ -125,16 +151,13 @@
 			// 
 			// sinnerSinsDataGridView
 			// 
+			this.sinnerSinsDataGridView.AllowUserToAddRows = false;
 			this.sinnerSinsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.sinnerSinsDataGridView.Location = new System.Drawing.Point(9, 297);
 			this.sinnerSinsDataGridView.Name = "sinnerSinsDataGridView";
-			this.sinnerSinsDataGridView.Size = new System.Drawing.Size(780, 227);
+			this.sinnerSinsDataGridView.Size = new System.Drawing.Size(662, 227);
 			this.sinnerSinsDataGridView.TabIndex = 5;
 			this.sinnerSinsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sinnerSinsDataGridView_CellContentClick);
-			// 
-			// punishmentSinsBindingSource
-			// 
-			this.punishmentSinsBindingSource.CurrentChanged += new System.EventHandler(this.punishmentSinsBindingSource_CurrentChanged);
 			// 
 			// label3
 			// 
@@ -173,7 +196,7 @@
 			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
 			this.sinnersDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
-			this.sinnersDataGridView.Location = new System.Drawing.Point(6, 6);
+			this.sinnersDataGridView.Location = new System.Drawing.Point(6, 74);
 			this.sinnersDataGridView.Name = "sinnersDataGridView";
 			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
 			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -183,14 +206,10 @@
 			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
 			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
 			this.sinnersDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-			this.sinnersDataGridView.Size = new System.Drawing.Size(783, 247);
+			this.sinnersDataGridView.Size = new System.Drawing.Size(623, 183);
 			this.sinnersDataGridView.TabIndex = 0;
 			this.sinnersDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sinnersDataGridView_CellContentClick);
-			// 
-			// sinnerBindingSource
-			// 
-			this.sinnerBindingSource.DataSource = typeof(EntityFrameworkDAL.Sinner);
-			this.sinnerBindingSource.CurrentChanged += new System.EventHandler(this.sinnerBindingSource_CurrentChanged);
+			this.sinnersDataGridView.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.sinnersDataGridView_RowsAdded);
 			// 
 			// tabPage2
 			// 
@@ -246,64 +265,6 @@
 			this.sinsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this.sinsDataGridView.Size = new System.Drawing.Size(810, 294);
 			this.sinsDataGridView.TabIndex = 0;
-			// 
-			// idDataGridViewTextBoxColumn
-			// 
-			this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-			this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-			this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-			// 
-			// nameDataGridViewTextBoxColumn
-			// 
-			this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-			this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-			this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-			// 
-			// punishmentIdDataGridViewTextBoxColumn
-			// 
-			this.punishmentIdDataGridViewTextBoxColumn.DataPropertyName = "PunishmentId";
-			this.punishmentIdDataGridViewTextBoxColumn.HeaderText = "PunishmentId";
-			this.punishmentIdDataGridViewTextBoxColumn.Name = "punishmentIdDataGridViewTextBoxColumn";
-			// 
-			// punisherIdDataGridViewTextBoxColumn
-			// 
-			this.punisherIdDataGridViewTextBoxColumn.DataPropertyName = "PunisherId";
-			this.punisherIdDataGridViewTextBoxColumn.HeaderText = "PunisherId";
-			this.punisherIdDataGridViewTextBoxColumn.Name = "punisherIdDataGridViewTextBoxColumn";
-			// 
-			// sinDegreeIdDataGridViewTextBoxColumn
-			// 
-			this.sinDegreeIdDataGridViewTextBoxColumn.DataPropertyName = "SinDegreeId";
-			this.sinDegreeIdDataGridViewTextBoxColumn.HeaderText = "SinDegreeId";
-			this.sinDegreeIdDataGridViewTextBoxColumn.Name = "sinDegreeIdDataGridViewTextBoxColumn";
-			// 
-			// sinnersDataGridViewTextBoxColumn
-			// 
-			this.sinnersDataGridViewTextBoxColumn.DataPropertyName = "Sinners";
-			this.sinnersDataGridViewTextBoxColumn.HeaderText = "Sinners";
-			this.sinnersDataGridViewTextBoxColumn.Name = "sinnersDataGridViewTextBoxColumn";
-			// 
-			// punishmentDataGridViewTextBoxColumn
-			// 
-			this.punishmentDataGridViewTextBoxColumn.DataPropertyName = "Punishment";
-			this.punishmentDataGridViewTextBoxColumn.HeaderText = "Punishment";
-			this.punishmentDataGridViewTextBoxColumn.Name = "punishmentDataGridViewTextBoxColumn";
-			// 
-			// punisherDataGridViewTextBoxColumn
-			// 
-			this.punisherDataGridViewTextBoxColumn.DataPropertyName = "Punisher";
-			this.punisherDataGridViewTextBoxColumn.HeaderText = "Punisher";
-			this.punisherDataGridViewTextBoxColumn.Name = "punisherDataGridViewTextBoxColumn";
-			// 
-			// sinDegreeDataGridViewTextBoxColumn
-			// 
-			this.sinDegreeDataGridViewTextBoxColumn.DataPropertyName = "SinDegree";
-			this.sinDegreeDataGridViewTextBoxColumn.HeaderText = "SinDegree";
-			this.sinDegreeDataGridViewTextBoxColumn.Name = "sinDegreeDataGridViewTextBoxColumn";
-			// 
-			// sinBindingSource
-			// 
-			this.sinBindingSource.DataSource = typeof(EntityFrameworkDAL.Sin);
 			// 
 			// tabPage3
 			// 
@@ -386,11 +347,6 @@
 			this.punishmentsGridView.Text = "radGridView1";
 			this.punishmentsGridView.CurrentRowChanged += new Telerik.WinControls.UI.CurrentRowChangedEventHandler(this.masterGridView_CurrentRowChanged);
 			// 
-			// punishmentBindingSource
-			// 
-			this.punishmentBindingSource.DataSource = typeof(EntityFrameworkDAL.Punishment);
-			this.punishmentBindingSource.CurrentChanged += new System.EventHandler(this.punishmentBindingSource_CurrentChanged);
-			// 
 			// tabPage4
 			// 
 			this.tabPage4.Location = new System.Drawing.Point(4, 22);
@@ -401,9 +357,23 @@
 			this.tabPage4.UseVisualStyleBackColor = true;
 			this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
 			// 
-			// genderBindingSource
+			// Gender
 			// 
-			this.genderBindingSource.DataSource = typeof(EntityFrameworkDAL.Gender);
+			this.Gender.DataPropertyName = "GenderId";
+			this.Gender.DataSource = this.genderBindingSource;
+			this.Gender.DisplayMember = "Name";
+			this.Gender.HeaderText = "Gender";
+			this.Gender.Name = "Gender";
+			this.Gender.ValueMember = "Id";
+			// 
+			// saveChangesButton
+			// 
+			this.saveChangesButton.Location = new System.Drawing.Point(9, 530);
+			this.saveChangesButton.Name = "saveChangesButton";
+			this.saveChangesButton.Size = new System.Drawing.Size(662, 66);
+			this.saveChangesButton.TabIndex = 6;
+			this.saveChangesButton.Text = "Save Changes";
+			this.saveChangesButton.Click += new System.EventHandler(this.saveChangesButton_Click);
 			// 
 			// fullNameDataGridViewTextBoxColumn
 			// 
@@ -429,27 +399,253 @@
 			this.salaryDataGridViewTextBoxColumn.HeaderText = "Salary";
 			this.salaryDataGridViewTextBoxColumn.Name = "salaryDataGridViewTextBoxColumn";
 			// 
-			// Gender
+			// genderBindingSource
 			// 
-			this.Gender.DataPropertyName = "GenderId";
-			this.Gender.DataSource = this.genderBindingSource;
-			this.Gender.DisplayMember = "Name";
-			this.Gender.HeaderText = "Gender";
-			this.Gender.Name = "Gender";
-			this.Gender.ValueMember = "Id";
+			this.genderBindingSource.DataSource = typeof(EntityFrameworkDAL.Gender);
 			// 
-			// saveChangesButton
+			// sinnerBindingSource
 			// 
-			this.saveChangesButton.Location = new System.Drawing.Point(9, 530);
-			this.saveChangesButton.Name = "saveChangesButton";
-			this.saveChangesButton.Size = new System.Drawing.Size(780, 66);
-			this.saveChangesButton.TabIndex = 6;
-			this.saveChangesButton.Text = "Save Changes";
-			this.saveChangesButton.Click += new System.EventHandler(this.saveChangesButton_Click);
+			this.sinnerBindingSource.DataSource = typeof(EntityFrameworkDAL.Sinner);
+			this.sinnerBindingSource.CurrentChanged += new System.EventHandler(this.sinnerBindingSource_CurrentChanged);
+			// 
+			// idDataGridViewTextBoxColumn
+			// 
+			this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+			this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+			this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+			// 
+			// nameDataGridViewTextBoxColumn
+			// 
+			this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+			this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+			this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+			// 
+			// punishmentIdDataGridViewTextBoxColumn
+			// 
+			this.punishmentIdDataGridViewTextBoxColumn.DataPropertyName = "PunishmentId";
+			this.punishmentIdDataGridViewTextBoxColumn.HeaderText = "PunishmentId";
+			this.punishmentIdDataGridViewTextBoxColumn.Name = "punishmentIdDataGridViewTextBoxColumn";
+			// 
+			// punisherIdDataGridViewTextBoxColumn
+			// 
+			this.punisherIdDataGridViewTextBoxColumn.DataPropertyName = "PunisherId";
+			this.punisherIdDataGridViewTextBoxColumn.HeaderText = "PunisherId";
+			this.punisherIdDataGridViewTextBoxColumn.Name = "punisherIdDataGridViewTextBoxColumn";
+			// 
+			// sinDegreeIdDataGridViewTextBoxColumn
+			// 
+			this.sinDegreeIdDataGridViewTextBoxColumn.DataPropertyName = "SinDegreeId";
+			this.sinDegreeIdDataGridViewTextBoxColumn.HeaderText = "SinDegreeId";
+			this.sinDegreeIdDataGridViewTextBoxColumn.Name = "sinDegreeIdDataGridViewTextBoxColumn";
+			// 
+			// sinnersDataGridViewTextBoxColumn
+			// 
+			this.sinnersDataGridViewTextBoxColumn.DataPropertyName = "Sinners";
+			this.sinnersDataGridViewTextBoxColumn.HeaderText = "Sinners";
+			this.sinnersDataGridViewTextBoxColumn.Name = "sinnersDataGridViewTextBoxColumn";
+			// 
+			// punishmentDataGridViewTextBoxColumn
+			// 
+			this.punishmentDataGridViewTextBoxColumn.DataPropertyName = "Punishment";
+			this.punishmentDataGridViewTextBoxColumn.HeaderText = "Punishment";
+			this.punishmentDataGridViewTextBoxColumn.Name = "punishmentDataGridViewTextBoxColumn";
+			// 
+			// punisherDataGridViewTextBoxColumn
+			// 
+			this.punisherDataGridViewTextBoxColumn.DataPropertyName = "Punisher";
+			this.punisherDataGridViewTextBoxColumn.HeaderText = "Punisher";
+			this.punisherDataGridViewTextBoxColumn.Name = "punisherDataGridViewTextBoxColumn";
+			// 
+			// sinDegreeDataGridViewTextBoxColumn
+			// 
+			this.sinDegreeDataGridViewTextBoxColumn.DataPropertyName = "SinDegree";
+			this.sinDegreeDataGridViewTextBoxColumn.HeaderText = "SinDegree";
+			this.sinDegreeDataGridViewTextBoxColumn.Name = "sinDegreeDataGridViewTextBoxColumn";
+			// 
+			// sinBindingSource
+			// 
+			this.sinBindingSource.DataSource = typeof(EntityFrameworkDAL.Sin);
+			// 
+			// punishmentSinsBindingSource
+			// 
+			this.punishmentSinsBindingSource.CurrentChanged += new System.EventHandler(this.punishmentSinsBindingSource_CurrentChanged);
+			// 
+			// punishmentBindingSource
+			// 
+			this.punishmentBindingSource.DataSource = typeof(EntityFrameworkDAL.Punishment);
+			this.punishmentBindingSource.CurrentChanged += new System.EventHandler(this.punishmentBindingSource_CurrentChanged);
 			// 
 			// punisherBindingSource
 			// 
 			this.punisherBindingSource.DataSource = typeof(EntityFrameworkDAL.Punisher);
+			// 
+			// toolStrip1
+			// 
+			this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonAddNewSinner,
+            this.toolStripButton2});
+			this.toolStrip1.Location = new System.Drawing.Point(3, 3);
+			this.toolStrip1.Name = "toolStrip1";
+			this.toolStrip1.Size = new System.Drawing.Size(1109, 25);
+			this.toolStrip1.TabIndex = 7;
+			this.toolStrip1.Text = "toolStrip1";
+			// 
+			// toolStripButtonAddNewSinner
+			// 
+			this.toolStripButtonAddNewSinner.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.toolStripButtonAddNewSinner.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonAddNewSinner.Image")));
+			this.toolStripButtonAddNewSinner.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButtonAddNewSinner.Name = "toolStripButtonAddNewSinner";
+			this.toolStripButtonAddNewSinner.Size = new System.Drawing.Size(23, 22);
+			this.toolStripButtonAddNewSinner.Text = "Add New Sinner";
+			this.toolStripButtonAddNewSinner.Click += new System.EventHandler(this.toolStripButtonAddNewSinner_Click);
+			// 
+			// toolStripButton2
+			// 
+			this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+			this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.toolStripButton2.Name = "toolStripButton2";
+			this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+			this.toolStripButton2.Text = "toolStripButton2";
+			// 
+			// radBindingNavigator1
+			// 
+			this.radBindingNavigator1.BindingSource = this.sinnerBindingSource;
+			this.radBindingNavigator1.Dock = System.Windows.Forms.DockStyle.Top;
+			this.radBindingNavigator1.Location = new System.Drawing.Point(3, 28);
+			this.radBindingNavigator1.Name = "radBindingNavigator1";
+			this.radBindingNavigator1.Rows.AddRange(new Telerik.WinControls.UI.CommandBarRowElement[] {
+            this.radBindingNavigator1RowElement});
+			this.radBindingNavigator1.Size = new System.Drawing.Size(1109, 30);
+			this.radBindingNavigator1.TabIndex = 8;
+			this.radBindingNavigator1.Text = "radBindingNavigator1";
+			// 
+			// radBindingNavigator1RowElement
+			// 
+			this.radBindingNavigator1RowElement.MinSize = new System.Drawing.Size(25, 25);
+			this.radBindingNavigator1RowElement.Strips.AddRange(new Telerik.WinControls.UI.CommandBarStripElement[] {
+            this.radBindingNavigator1FirstStrip,
+            this.radBindingNavigator1SecondStrip});
+			// 
+			// radBindingNavigator1FirstStrip
+			// 
+			this.radBindingNavigator1FirstStrip.DisplayName = "radBindingNavigator1FirstStrip";
+			this.radBindingNavigator1FirstStrip.EnableDragging = false;
+			// 
+			// 
+			// 
+			this.radBindingNavigator1FirstStrip.Grip.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+			this.radBindingNavigator1FirstStrip.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.radBindingNavigator1MoveFirstItem,
+            this.commandBarSeparator1,
+            this.radBindingNavigator1MovePreviousItem,
+            this.commandBarSeparator2,
+            this.radBindingNavigator1PositionItem,
+            this.radBindingNavigator1CountItem,
+            this.commandBarSeparator3,
+            this.radBindingNavigator1MoveNextItem,
+            this.commandBarSeparator4,
+            this.radBindingNavigator1MoveLastItem});
+			this.radBindingNavigator1FirstStrip.MinSize = new System.Drawing.Size(0, 0);
+			// 
+			// 
+			// 
+			this.radBindingNavigator1FirstStrip.OverflowButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+			// 
+			// radBindingNavigator1MoveFirstItem
+			// 
+			this.radBindingNavigator1MoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("radBindingNavigator1MoveFirstItem.Image")));
+			this.radBindingNavigator1MoveFirstItem.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+			this.radBindingNavigator1MoveFirstItem.Name = "radBindingNavigator1MoveFirstItem";
+			// 
+			// radBindingNavigator1MovePreviousItem
+			// 
+			this.radBindingNavigator1MovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("radBindingNavigator1MovePreviousItem.Image")));
+			this.radBindingNavigator1MovePreviousItem.Name = "radBindingNavigator1MovePreviousItem";
+			// 
+			// radBindingNavigator1PositionItem
+			// 
+			this.radBindingNavigator1PositionItem.AccessibleDescription = "0";
+			this.radBindingNavigator1PositionItem.AccessibleName = "0";
+			this.radBindingNavigator1PositionItem.Name = "radBindingNavigator1PositionItem";
+			this.radBindingNavigator1PositionItem.Text = "0";
+			// 
+			// radBindingNavigator1CountItem
+			// 
+			this.radBindingNavigator1CountItem.AccessibleDescription = "of 0";
+			this.radBindingNavigator1CountItem.AccessibleName = "of 0";
+			this.radBindingNavigator1CountItem.Name = "radBindingNavigator1CountItem";
+			this.radBindingNavigator1CountItem.Text = "of 0";
+			// 
+			// radBindingNavigator1MoveNextItem
+			// 
+			this.radBindingNavigator1MoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("radBindingNavigator1MoveNextItem.Image")));
+			this.radBindingNavigator1MoveNextItem.Name = "radBindingNavigator1MoveNextItem";
+			// 
+			// radBindingNavigator1MoveLastItem
+			// 
+			this.radBindingNavigator1MoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("radBindingNavigator1MoveLastItem.Image")));
+			this.radBindingNavigator1MoveLastItem.Name = "radBindingNavigator1MoveLastItem";
+			// 
+			// commandBarSeparator1
+			// 
+			this.commandBarSeparator1.Name = "commandBarSeparator1";
+			this.commandBarSeparator1.VisibleInOverflowMenu = false;
+			// 
+			// commandBarSeparator2
+			// 
+			this.commandBarSeparator2.Name = "commandBarSeparator2";
+			this.commandBarSeparator2.VisibleInOverflowMenu = false;
+			// 
+			// commandBarSeparator3
+			// 
+			this.commandBarSeparator3.Name = "commandBarSeparator3";
+			this.commandBarSeparator3.VisibleInOverflowMenu = false;
+			// 
+			// commandBarSeparator4
+			// 
+			this.commandBarSeparator4.Name = "commandBarSeparator4";
+			this.commandBarSeparator4.VisibleInOverflowMenu = false;
+			// 
+			// radBindingNavigator1SecondStrip
+			// 
+			this.radBindingNavigator1SecondStrip.DesiredLocation = ((System.Drawing.PointF)(resources.GetObject("radBindingNavigator1SecondStrip.DesiredLocation")));
+			this.radBindingNavigator1SecondStrip.DisplayName = "radBindingNavigator1SecondStrip";
+			this.radBindingNavigator1SecondStrip.EnableDragging = false;
+			// 
+			// 
+			// 
+			this.radBindingNavigator1SecondStrip.Grip.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+			this.radBindingNavigator1SecondStrip.Items.AddRange(new Telerik.WinControls.UI.RadCommandBarBaseItem[] {
+            this.radBindingNavigator1AddNewItem,
+            this.commandBarSeparator5,
+            this.radBindingNavigator1DeleteItem});
+			this.radBindingNavigator1SecondStrip.MinSize = new System.Drawing.Size(0, 0);
+			// 
+			// 
+			// 
+			this.radBindingNavigator1SecondStrip.OverflowButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+			// 
+			// radBindingNavigator1AddNewItem
+			// 
+			this.radBindingNavigator1AddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("radBindingNavigator1AddNewItem.Image")));
+			this.radBindingNavigator1AddNewItem.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+			this.radBindingNavigator1AddNewItem.Name = "radBindingNavigator1AddNewItem";
+			// 
+			// radBindingNavigator1DeleteItem
+			// 
+			this.radBindingNavigator1DeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("radBindingNavigator1DeleteItem.Image")));
+			this.radBindingNavigator1DeleteItem.Name = "radBindingNavigator1DeleteItem";
+			// 
+			// commandBarSeparator5
+			// 
+			this.commandBarSeparator5.Name = "commandBarSeparator5";
+			this.commandBarSeparator5.VisibleInOverflowMenu = false;
+			// 
+			// commandBarRowElement1
+			// 
+			this.commandBarRowElement1.MinSize = new System.Drawing.Size(25, 25);
 			// 
 			// HellManager
 			// 
@@ -464,23 +660,26 @@
 			this.tabPage1.ResumeLayout(false);
 			this.tabPage1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsDataGridView)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnersDataGridView)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).EndInit();
 			this.tabPage2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.sinsDataGridView)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).EndInit();
 			this.tabPage3.ResumeLayout(false);
 			this.tabPage3.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsGridView.MasterTemplate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsGridView)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentsGridView.MasterTemplate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentsGridView)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.punishmentBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.genderBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.saveChangesButton)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.genderBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.punishmentBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.punisherBindingSource)).EndInit();
+			this.toolStrip1.ResumeLayout(false);
+			this.toolStrip1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.radBindingNavigator1)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -502,7 +701,6 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn punishmentDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn punisherDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn sinDegreeDataGridViewTextBoxColumn;
-		private System.Windows.Forms.BindingSource sinBindingSource;
 		private System.Windows.Forms.BindingSource sinnerSinsBindingSource;
 		private System.Windows.Forms.TabPage tabPage3;
 		private System.Windows.Forms.BindingSource punishmentBindingSource;
@@ -522,5 +720,27 @@
 		private System.Windows.Forms.DataGridViewComboBoxColumn Gender;
 		private Telerik.WinControls.UI.RadButton saveChangesButton;
 		private System.Windows.Forms.BindingSource punisherBindingSource;
+		private System.Windows.Forms.ToolStrip toolStrip1;
+		private System.Windows.Forms.ToolStripButton toolStripButtonAddNewSinner;
+		private System.Windows.Forms.ToolStripButton toolStripButton2;
+		public System.Windows.Forms.BindingSource sinBindingSource;
+		private Telerik.WinControls.UI.RadBindingNavigator radBindingNavigator1;
+		private Telerik.WinControls.UI.CommandBarRowElement radBindingNavigator1RowElement;
+		private Telerik.WinControls.UI.CommandBarStripElement radBindingNavigator1FirstStrip;
+		private Telerik.WinControls.UI.CommandBarButton radBindingNavigator1MoveFirstItem;
+		private Telerik.WinControls.UI.CommandBarSeparator commandBarSeparator1;
+		private Telerik.WinControls.UI.CommandBarButton radBindingNavigator1MovePreviousItem;
+		private Telerik.WinControls.UI.CommandBarSeparator commandBarSeparator2;
+		private Telerik.WinControls.UI.CommandBarTextBox radBindingNavigator1PositionItem;
+		private Telerik.WinControls.UI.CommandBarLabel radBindingNavigator1CountItem;
+		private Telerik.WinControls.UI.CommandBarSeparator commandBarSeparator3;
+		private Telerik.WinControls.UI.CommandBarButton radBindingNavigator1MoveNextItem;
+		private Telerik.WinControls.UI.CommandBarSeparator commandBarSeparator4;
+		private Telerik.WinControls.UI.CommandBarButton radBindingNavigator1MoveLastItem;
+		private Telerik.WinControls.UI.CommandBarStripElement radBindingNavigator1SecondStrip;
+		private Telerik.WinControls.UI.CommandBarButton radBindingNavigator1AddNewItem;
+		private Telerik.WinControls.UI.CommandBarSeparator commandBarSeparator5;
+		private Telerik.WinControls.UI.CommandBarButton radBindingNavigator1DeleteItem;
+		private Telerik.WinControls.UI.CommandBarRowElement commandBarRowElement1;
 	}
 }
