@@ -31,5 +31,9 @@ namespace EntityFrameworkDAL
         public virtual Punishment Punishment { get; set; }
         public virtual Punisher Punisher { get; set; }
         public virtual SinDegree SinDegree { get; set; }
-    }
+		public override string ToString()
+		{
+			return Name;
+		}
+	}
 }

@@ -18,12 +18,12 @@ namespace HellManager
 			InitializeComponent();
 			SetDataSources();
 
-//
-//			radGridView1.Columns[0].IsVisible = false;
-//			radGridView1.Columns[2].IsVisible = false;
-//			radGridView1.Columns[3].IsVisible = false;
-//			radGridView1.Columns[4].IsVisible = false;
-//			radGridView1.Columns[0].IsVisible = false;
+
+		radGridView1.Columns[0].IsVisible = false;
+		radGridView1.Columns[2].IsVisible = false;
+		radGridView1.Columns[3].IsVisible = false;
+		radGridView1.Columns[4].IsVisible = false;
+		radGridView1.Columns[5].IsVisible = false;
 
 			//addComboBoxCol();
 		}

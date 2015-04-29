@@ -29,16 +29,16 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn3 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn4 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn7 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn8 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HellManager));
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -96,6 +96,18 @@
 			this.commandBarSeparator5 = new Telerik.WinControls.UI.CommandBarSeparator();
 			this.commandBarRowElement1 = new Telerik.WinControls.UI.CommandBarRowElement();
 			this.radGridView1 = new Telerik.WinControls.UI.RadGridView();
+			this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+			this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+			this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+			this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+			this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+			this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+			this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+			this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.sinnersDataGridView)).BeginInit();
@@ -118,6 +130,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.radBindingNavigator1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
+			this.radGridView1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+			this.bindingNavigator1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// tabControl1
@@ -163,14 +178,14 @@
 			// 
 			this.sinnersDataGridView.AllowUserToAddRows = false;
 			this.sinnersDataGridView.AutoGenerateColumns = false;
-			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.sinnersDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+			dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.sinnersDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
 			this.sinnersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.sinnersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.fullNameDataGridViewTextBoxColumn,
@@ -179,24 +194,24 @@
             this.salaryDataGridViewTextBoxColumn,
             this.Gender});
 			this.sinnersDataGridView.DataSource = this.sinnerBindingSource;
-			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-			dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.sinnersDataGridView.DefaultCellStyle = dataGridViewCellStyle8;
+			dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.sinnersDataGridView.DefaultCellStyle = dataGridViewCellStyle20;
 			this.sinnersDataGridView.Location = new System.Drawing.Point(6, 74);
 			this.sinnersDataGridView.Name = "sinnersDataGridView";
-			dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.sinnersDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+			dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.sinnersDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
 			this.sinnersDataGridView.Size = new System.Drawing.Size(623, 183);
 			this.sinnersDataGridView.TabIndex = 0;
 			this.sinnersDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sinnersDataGridView_CellContentClick);
@@ -217,14 +232,14 @@
 			// sinsDataGridView
 			// 
 			this.sinsDataGridView.AutoGenerateColumns = false;
-			dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.sinsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+			dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.sinsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
 			this.sinsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.sinsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -237,24 +252,24 @@
             this.punisherDataGridViewTextBoxColumn,
             this.sinDegreeDataGridViewTextBoxColumn});
 			this.sinsDataGridView.DataSource = this.sinBindingSource;
-			dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-			dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.sinsDataGridView.DefaultCellStyle = dataGridViewCellStyle11;
+			dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.sinsDataGridView.DefaultCellStyle = dataGridViewCellStyle23;
 			this.sinsDataGridView.Location = new System.Drawing.Point(6, 6);
 			this.sinsDataGridView.Name = "sinsDataGridView";
-			dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.sinsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+			dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.sinsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
 			this.sinsDataGridView.Size = new System.Drawing.Size(810, 294);
 			this.sinsDataGridView.TabIndex = 0;
 			// 
@@ -308,30 +323,30 @@
 			// 
 			// 
 			// 
-			gridViewDecimalColumn3.DataType = typeof(int);
-			gridViewDecimalColumn3.FieldName = "Id";
-			gridViewDecimalColumn3.HeaderText = "Id";
-			gridViewDecimalColumn3.IsAutoGenerated = true;
-			gridViewDecimalColumn3.Name = "Id";
-			gridViewTextBoxColumn3.FieldName = "Name";
-			gridViewTextBoxColumn3.HeaderText = "Name";
-			gridViewTextBoxColumn3.IsAutoGenerated = true;
-			gridViewTextBoxColumn3.Name = "Name";
-			gridViewDecimalColumn4.DataType = typeof(int);
-			gridViewDecimalColumn4.FieldName = "TreatCycle";
-			gridViewDecimalColumn4.HeaderText = "TreatCycle";
-			gridViewDecimalColumn4.IsAutoGenerated = true;
-			gridViewDecimalColumn4.Name = "TreatCycle";
-			gridViewTextBoxColumn4.DataType = typeof(System.Collections.Generic.ICollection<EntityFrameworkDAL.Sin>);
-			gridViewTextBoxColumn4.FieldName = "Sins";
-			gridViewTextBoxColumn4.HeaderText = "Sins";
-			gridViewTextBoxColumn4.IsAutoGenerated = true;
-			gridViewTextBoxColumn4.Name = "Sins";
+			gridViewDecimalColumn7.DataType = typeof(int);
+			gridViewDecimalColumn7.FieldName = "Id";
+			gridViewDecimalColumn7.HeaderText = "Id";
+			gridViewDecimalColumn7.IsAutoGenerated = true;
+			gridViewDecimalColumn7.Name = "Id";
+			gridViewTextBoxColumn7.FieldName = "Name";
+			gridViewTextBoxColumn7.HeaderText = "Name";
+			gridViewTextBoxColumn7.IsAutoGenerated = true;
+			gridViewTextBoxColumn7.Name = "Name";
+			gridViewDecimalColumn8.DataType = typeof(int);
+			gridViewDecimalColumn8.FieldName = "TreatCycle";
+			gridViewDecimalColumn8.HeaderText = "TreatCycle";
+			gridViewDecimalColumn8.IsAutoGenerated = true;
+			gridViewDecimalColumn8.Name = "TreatCycle";
+			gridViewTextBoxColumn8.DataType = typeof(System.Collections.Generic.ICollection<EntityFrameworkDAL.Sin>);
+			gridViewTextBoxColumn8.FieldName = "Sins";
+			gridViewTextBoxColumn8.HeaderText = "Sins";
+			gridViewTextBoxColumn8.IsAutoGenerated = true;
+			gridViewTextBoxColumn8.Name = "Sins";
 			this.punishmentsGridView.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn3,
-            gridViewTextBoxColumn3,
-            gridViewDecimalColumn4,
-            gridViewTextBoxColumn4});
+            gridViewDecimalColumn7,
+            gridViewTextBoxColumn7,
+            gridViewDecimalColumn8,
+            gridViewTextBoxColumn8});
 			this.punishmentsGridView.MasterTemplate.DataSource = this.punishmentBindingSource;
 			this.punishmentsGridView.Name = "punishmentsGridView";
 			this.punishmentsGridView.Size = new System.Drawing.Size(669, 206);
@@ -641,11 +656,129 @@
 			// 
 			// radGridView1
 			// 
+			this.radGridView1.Controls.Add(this.bindingNavigator1);
 			this.radGridView1.Location = new System.Drawing.Point(9, 297);
+			// 
+			// 
+			// 
+			this.radGridView1.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
 			this.radGridView1.Name = "radGridView1";
-			this.radGridView1.Size = new System.Drawing.Size(645, 150);
+			this.radGridView1.Size = new System.Drawing.Size(645, 227);
 			this.radGridView1.TabIndex = 9;
 			this.radGridView1.Text = "radGridView1";
+			// 
+			// bindingNavigator1
+			// 
+			this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
+			this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
+			this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
+			this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem});
+			this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
+			this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+			this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
+			this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
+			this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+			this.bindingNavigator1.Name = "bindingNavigator1";
+			this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
+			this.bindingNavigator1.Size = new System.Drawing.Size(645, 25);
+			this.bindingNavigator1.TabIndex = 1;
+			this.bindingNavigator1.Text = "bindingNavigator1";
+			// 
+			// bindingNavigatorMoveFirstItem
+			// 
+			this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+			this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+			this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+			this.bindingNavigatorMoveFirstItem.Text = "Move first";
+			// 
+			// bindingNavigatorMovePreviousItem
+			// 
+			this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+			this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+			this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+			this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+			// 
+			// bindingNavigatorSeparator
+			// 
+			this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+			this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+			// 
+			// bindingNavigatorPositionItem
+			// 
+			this.bindingNavigatorPositionItem.AccessibleName = "Position";
+			this.bindingNavigatorPositionItem.AutoSize = false;
+			this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+			this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+			this.bindingNavigatorPositionItem.Text = "0";
+			this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+			// 
+			// bindingNavigatorCountItem
+			// 
+			this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+			this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+			this.bindingNavigatorCountItem.Text = "of {0}";
+			this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+			// 
+			// bindingNavigatorSeparator1
+			// 
+			this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+			this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+			// 
+			// bindingNavigatorMoveNextItem
+			// 
+			this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+			this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+			this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+			this.bindingNavigatorMoveNextItem.Text = "Move next";
+			// 
+			// bindingNavigatorMoveLastItem
+			// 
+			this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+			this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+			this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+			this.bindingNavigatorMoveLastItem.Text = "Move last";
+			// 
+			// bindingNavigatorSeparator2
+			// 
+			this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+			this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+			// 
+			// bindingNavigatorAddNewItem
+			// 
+			this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+			this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+			this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+			this.bindingNavigatorAddNewItem.Text = "Add new";
+			// 
+			// bindingNavigatorDeleteItem
+			// 
+			this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+			this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+			this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+			this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+			this.bindingNavigatorDeleteItem.Text = "Delete";
 			// 
 			// HellManager
 			// 
@@ -681,6 +814,11 @@
 			((System.ComponentModel.ISupportInitialize)(this.radBindingNavigator1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
+			this.radGridView1.ResumeLayout(false);
+			this.radGridView1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+			this.bindingNavigator1.ResumeLayout(false);
+			this.bindingNavigator1.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -743,5 +881,17 @@
 		private Telerik.WinControls.UI.CommandBarButton radBindingNavigator1DeleteItem;
 		private Telerik.WinControls.UI.CommandBarRowElement commandBarRowElement1;
 		private Telerik.WinControls.UI.RadGridView radGridView1;
+		private System.Windows.Forms.BindingNavigator bindingNavigator1;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+		private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+		private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
 	}
 }
