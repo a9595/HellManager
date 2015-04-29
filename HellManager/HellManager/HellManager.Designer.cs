@@ -32,6 +32,7 @@
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.sinnerSinsDataGridView = new System.Windows.Forms.DataGridView();
+			this.sinnerSinsBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.sinnersDataGridView = new System.Windows.Forms.DataGridView();
 			this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,16 +52,15 @@
 			this.punisherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.sinDegreeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.sinBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.sinnerSinsBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsDataGridView)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnersDataGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).BeginInit();
 			this.tabPage2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.sinsDataGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tabControl1
@@ -242,15 +242,16 @@
 			this.Controls.Add(this.tabControl1);
 			this.Name = "HellManager";
 			this.Text = "HellManager";
+			this.Load += new System.EventHandler(this.HellManager_Load);
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsDataGridView)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnersDataGridView)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).EndInit();
 			this.tabPage2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.sinsDataGridView)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).EndInit();
 			this.ResumeLayout(false);
 
 		}
