@@ -54,6 +54,7 @@ namespace HellManager
 			
 			sinBindingSource.DataSource = _context.Sins.Local.ToBindingList();
 			punishmentBindingSource.DataSource = _context.Punishments.Local.ToBindingList();
+			punisherBindingSource.DataSource = _context.Punishers.Local.ToBindingList();
 
 			genderBindingSource.DataSource = _context.Genders.ToList();
 			radGridView1.DataSource = sinnerSinsBindingSource;

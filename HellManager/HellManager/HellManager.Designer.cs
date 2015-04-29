@@ -29,23 +29,28 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn7 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn8 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn3 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HellManager));
+			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn4 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+			Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.label3 = new System.Windows.Forms.Label();
 			this.sinnersDataGridView = new System.Windows.Forms.DataGridView();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this.sinsDataGridView = new System.Windows.Forms.DataGridView();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
@@ -54,26 +59,8 @@
 			this.tabPage4 = new System.Windows.Forms.TabPage();
 			this.Gender = new System.Windows.Forms.DataGridViewComboBoxColumn();
 			this.saveChangesButton = new Telerik.WinControls.UI.RadButton();
-			this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.jobTitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.salaryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.genderBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.sinnerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.punishmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.punisherIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.sinDegreeIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.sinnersDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.punishmentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.punisherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.sinDegreeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.sinBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.punishmentSinsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.punishmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.sinnerSinsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.punisherBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.toolStrip1 = new System.Windows.Forms.ToolStrip();
 			this.toolStripButtonAddNewSinner = new System.Windows.Forms.ToolStripButton();
 			this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -108,24 +95,30 @@
 			this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
 			this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
 			this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+			this.sinnerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.jobTitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.salaryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.genderBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.sinBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.punishmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.punisherBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.radGridView2 = new Telerik.WinControls.UI.RadGridView();
+			this.radGridView3 = new Telerik.WinControls.UI.RadGridView();
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.sinnersDataGridView)).BeginInit();
 			this.tabPage2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.sinsDataGridView)).BeginInit();
 			this.tabPage3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsGridView.MasterTemplate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentsGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentsGridView.MasterTemplate)).BeginInit();
+			this.tabPage4.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.saveChangesButton)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.genderBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.punishmentBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.punisherBindingSource)).BeginInit();
 			this.toolStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radBindingNavigator1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
@@ -133,6 +126,15 @@
 			this.radGridView1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
 			this.bindingNavigator1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.genderBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.punishmentBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.punisherBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.radGridView2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.radGridView2.MasterTemplate)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.radGridView3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.radGridView3.MasterTemplate)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tabControl1
@@ -178,14 +180,14 @@
 			// 
 			this.sinnersDataGridView.AllowUserToAddRows = false;
 			this.sinnersDataGridView.AutoGenerateColumns = false;
-			dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.sinnersDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
+			dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.sinnersDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this.sinnersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.sinnersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.fullNameDataGridViewTextBoxColumn,
@@ -194,24 +196,24 @@
             this.salaryDataGridViewTextBoxColumn,
             this.Gender});
 			this.sinnersDataGridView.DataSource = this.sinnerBindingSource;
-			dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText;
-			dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.sinnersDataGridView.DefaultCellStyle = dataGridViewCellStyle20;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.sinnersDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
 			this.sinnersDataGridView.Location = new System.Drawing.Point(6, 74);
 			this.sinnersDataGridView.Name = "sinnersDataGridView";
-			dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.sinnersDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.sinnersDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
 			this.sinnersDataGridView.Size = new System.Drawing.Size(623, 183);
 			this.sinnersDataGridView.TabIndex = 0;
 			this.sinnersDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sinnersDataGridView_CellContentClick);
@@ -220,7 +222,7 @@
 			// 
 			// tabPage2
 			// 
-			this.tabPage2.Controls.Add(this.sinsDataGridView);
+			this.tabPage2.Controls.Add(this.radGridView2);
 			this.tabPage2.Location = new System.Drawing.Point(4, 22);
 			this.tabPage2.Name = "tabPage2";
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -228,50 +230,6 @@
 			this.tabPage2.TabIndex = 1;
 			this.tabPage2.Text = "Sinns";
 			this.tabPage2.UseVisualStyleBackColor = true;
-			// 
-			// sinsDataGridView
-			// 
-			this.sinsDataGridView.AutoGenerateColumns = false;
-			dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.sinsDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
-			this.sinsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.sinsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn,
-            this.punishmentIdDataGridViewTextBoxColumn,
-            this.punisherIdDataGridViewTextBoxColumn,
-            this.sinDegreeIdDataGridViewTextBoxColumn,
-            this.sinnersDataGridViewTextBoxColumn,
-            this.punishmentDataGridViewTextBoxColumn,
-            this.punisherDataGridViewTextBoxColumn,
-            this.sinDegreeDataGridViewTextBoxColumn});
-			this.sinsDataGridView.DataSource = this.sinBindingSource;
-			dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
-			dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
-			dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.sinsDataGridView.DefaultCellStyle = dataGridViewCellStyle23;
-			this.sinsDataGridView.Location = new System.Drawing.Point(6, 6);
-			this.sinsDataGridView.Name = "sinsDataGridView";
-			dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.sinsDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
-			this.sinsDataGridView.Size = new System.Drawing.Size(810, 294);
-			this.sinsDataGridView.TabIndex = 0;
 			// 
 			// tabPage3
 			// 
@@ -313,7 +271,7 @@
 			// 
 			this.punishmentSinsGridView.MasterTemplate.DataSource = this.punishmentSinsBindingSource;
 			this.punishmentSinsGridView.Name = "punishmentSinsGridView";
-			this.punishmentSinsGridView.Size = new System.Drawing.Size(327, 255);
+			this.punishmentSinsGridView.Size = new System.Drawing.Size(1100, 255);
 			this.punishmentSinsGridView.TabIndex = 1;
 			this.punishmentSinsGridView.Text = "radGridView1";
 			// 
@@ -323,39 +281,40 @@
 			// 
 			// 
 			// 
-			gridViewDecimalColumn7.DataType = typeof(int);
-			gridViewDecimalColumn7.FieldName = "Id";
-			gridViewDecimalColumn7.HeaderText = "Id";
-			gridViewDecimalColumn7.IsAutoGenerated = true;
-			gridViewDecimalColumn7.Name = "Id";
-			gridViewTextBoxColumn7.FieldName = "Name";
-			gridViewTextBoxColumn7.HeaderText = "Name";
-			gridViewTextBoxColumn7.IsAutoGenerated = true;
-			gridViewTextBoxColumn7.Name = "Name";
-			gridViewDecimalColumn8.DataType = typeof(int);
-			gridViewDecimalColumn8.FieldName = "TreatCycle";
-			gridViewDecimalColumn8.HeaderText = "TreatCycle";
-			gridViewDecimalColumn8.IsAutoGenerated = true;
-			gridViewDecimalColumn8.Name = "TreatCycle";
-			gridViewTextBoxColumn8.DataType = typeof(System.Collections.Generic.ICollection<EntityFrameworkDAL.Sin>);
-			gridViewTextBoxColumn8.FieldName = "Sins";
-			gridViewTextBoxColumn8.HeaderText = "Sins";
-			gridViewTextBoxColumn8.IsAutoGenerated = true;
-			gridViewTextBoxColumn8.Name = "Sins";
+			gridViewDecimalColumn2.DataType = typeof(int);
+			gridViewDecimalColumn2.FieldName = "Id";
+			gridViewDecimalColumn2.HeaderText = "Id";
+			gridViewDecimalColumn2.IsAutoGenerated = true;
+			gridViewDecimalColumn2.Name = "Id";
+			gridViewTextBoxColumn5.FieldName = "Name";
+			gridViewTextBoxColumn5.HeaderText = "Name";
+			gridViewTextBoxColumn5.IsAutoGenerated = true;
+			gridViewTextBoxColumn5.Name = "Name";
+			gridViewDecimalColumn3.DataType = typeof(int);
+			gridViewDecimalColumn3.FieldName = "TreatCycle";
+			gridViewDecimalColumn3.HeaderText = "TreatCycle";
+			gridViewDecimalColumn3.IsAutoGenerated = true;
+			gridViewDecimalColumn3.Name = "TreatCycle";
+			gridViewTextBoxColumn6.DataType = typeof(System.Collections.Generic.ICollection<EntityFrameworkDAL.Sin>);
+			gridViewTextBoxColumn6.FieldName = "Sins";
+			gridViewTextBoxColumn6.HeaderText = "Sins";
+			gridViewTextBoxColumn6.IsAutoGenerated = true;
+			gridViewTextBoxColumn6.Name = "Sins";
 			this.punishmentsGridView.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDecimalColumn7,
-            gridViewTextBoxColumn7,
-            gridViewDecimalColumn8,
-            gridViewTextBoxColumn8});
+            gridViewDecimalColumn2,
+            gridViewTextBoxColumn5,
+            gridViewDecimalColumn3,
+            gridViewTextBoxColumn6});
 			this.punishmentsGridView.MasterTemplate.DataSource = this.punishmentBindingSource;
 			this.punishmentsGridView.Name = "punishmentsGridView";
-			this.punishmentsGridView.Size = new System.Drawing.Size(669, 206);
+			this.punishmentsGridView.Size = new System.Drawing.Size(1103, 206);
 			this.punishmentsGridView.TabIndex = 0;
 			this.punishmentsGridView.Text = "radGridView1";
 			this.punishmentsGridView.CurrentRowChanged += new Telerik.WinControls.UI.CurrentRowChangedEventHandler(this.masterGridView_CurrentRowChanged);
 			// 
 			// tabPage4
 			// 
+			this.tabPage4.Controls.Add(this.radGridView3);
 			this.tabPage4.Location = new System.Drawing.Point(4, 22);
 			this.tabPage4.Name = "tabPage4";
 			this.tabPage4.Size = new System.Drawing.Size(1115, 624);
@@ -382,109 +341,9 @@
 			this.saveChangesButton.Text = "Save Changes";
 			this.saveChangesButton.Click += new System.EventHandler(this.saveChangesButton_Click);
 			// 
-			// fullNameDataGridViewTextBoxColumn
-			// 
-			this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
-			this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
-			this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
-			// 
-			// ageDataGridViewTextBoxColumn
-			// 
-			this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
-			this.ageDataGridViewTextBoxColumn.HeaderText = "Age";
-			this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-			// 
-			// jobTitleDataGridViewTextBoxColumn
-			// 
-			this.jobTitleDataGridViewTextBoxColumn.DataPropertyName = "JobTitle";
-			this.jobTitleDataGridViewTextBoxColumn.HeaderText = "JobTitle";
-			this.jobTitleDataGridViewTextBoxColumn.Name = "jobTitleDataGridViewTextBoxColumn";
-			// 
-			// salaryDataGridViewTextBoxColumn
-			// 
-			this.salaryDataGridViewTextBoxColumn.DataPropertyName = "Salary";
-			this.salaryDataGridViewTextBoxColumn.HeaderText = "Salary";
-			this.salaryDataGridViewTextBoxColumn.Name = "salaryDataGridViewTextBoxColumn";
-			// 
-			// genderBindingSource
-			// 
-			this.genderBindingSource.DataSource = typeof(EntityFrameworkDAL.Gender);
-			// 
-			// sinnerBindingSource
-			// 
-			this.sinnerBindingSource.DataSource = typeof(EntityFrameworkDAL.Sinner);
-			this.sinnerBindingSource.CurrentChanged += new System.EventHandler(this.sinnerBindingSource_CurrentChanged);
-			// 
-			// idDataGridViewTextBoxColumn
-			// 
-			this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-			this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-			this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-			// 
-			// nameDataGridViewTextBoxColumn
-			// 
-			this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-			this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-			this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-			// 
-			// punishmentIdDataGridViewTextBoxColumn
-			// 
-			this.punishmentIdDataGridViewTextBoxColumn.DataPropertyName = "PunishmentId";
-			this.punishmentIdDataGridViewTextBoxColumn.HeaderText = "PunishmentId";
-			this.punishmentIdDataGridViewTextBoxColumn.Name = "punishmentIdDataGridViewTextBoxColumn";
-			// 
-			// punisherIdDataGridViewTextBoxColumn
-			// 
-			this.punisherIdDataGridViewTextBoxColumn.DataPropertyName = "PunisherId";
-			this.punisherIdDataGridViewTextBoxColumn.HeaderText = "PunisherId";
-			this.punisherIdDataGridViewTextBoxColumn.Name = "punisherIdDataGridViewTextBoxColumn";
-			// 
-			// sinDegreeIdDataGridViewTextBoxColumn
-			// 
-			this.sinDegreeIdDataGridViewTextBoxColumn.DataPropertyName = "SinDegreeId";
-			this.sinDegreeIdDataGridViewTextBoxColumn.HeaderText = "SinDegreeId";
-			this.sinDegreeIdDataGridViewTextBoxColumn.Name = "sinDegreeIdDataGridViewTextBoxColumn";
-			// 
-			// sinnersDataGridViewTextBoxColumn
-			// 
-			this.sinnersDataGridViewTextBoxColumn.DataPropertyName = "Sinners";
-			this.sinnersDataGridViewTextBoxColumn.HeaderText = "Sinners";
-			this.sinnersDataGridViewTextBoxColumn.Name = "sinnersDataGridViewTextBoxColumn";
-			// 
-			// punishmentDataGridViewTextBoxColumn
-			// 
-			this.punishmentDataGridViewTextBoxColumn.DataPropertyName = "Punishment";
-			this.punishmentDataGridViewTextBoxColumn.HeaderText = "Punishment";
-			this.punishmentDataGridViewTextBoxColumn.Name = "punishmentDataGridViewTextBoxColumn";
-			// 
-			// punisherDataGridViewTextBoxColumn
-			// 
-			this.punisherDataGridViewTextBoxColumn.DataPropertyName = "Punisher";
-			this.punisherDataGridViewTextBoxColumn.HeaderText = "Punisher";
-			this.punisherDataGridViewTextBoxColumn.Name = "punisherDataGridViewTextBoxColumn";
-			// 
-			// sinDegreeDataGridViewTextBoxColumn
-			// 
-			this.sinDegreeDataGridViewTextBoxColumn.DataPropertyName = "SinDegree";
-			this.sinDegreeDataGridViewTextBoxColumn.HeaderText = "SinDegree";
-			this.sinDegreeDataGridViewTextBoxColumn.Name = "sinDegreeDataGridViewTextBoxColumn";
-			// 
-			// sinBindingSource
-			// 
-			this.sinBindingSource.DataSource = typeof(EntityFrameworkDAL.Sin);
-			// 
 			// punishmentSinsBindingSource
 			// 
 			this.punishmentSinsBindingSource.CurrentChanged += new System.EventHandler(this.punishmentSinsBindingSource_CurrentChanged);
-			// 
-			// punishmentBindingSource
-			// 
-			this.punishmentBindingSource.DataSource = typeof(EntityFrameworkDAL.Punishment);
-			this.punishmentBindingSource.CurrentChanged += new System.EventHandler(this.punishmentBindingSource_CurrentChanged);
-			// 
-			// punisherBindingSource
-			// 
-			this.punisherBindingSource.DataSource = typeof(EntityFrameworkDAL.Punisher);
 			// 
 			// toolStrip1
 			// 
@@ -559,6 +418,8 @@
 			// 
 			// 
 			this.radBindingNavigator1FirstStrip.OverflowButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+			((Telerik.WinControls.UI.RadCommandBarGrip)(this.radBindingNavigator1FirstStrip.GetChildAt(0))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+			((Telerik.WinControls.UI.RadCommandBarOverflowButton)(this.radBindingNavigator1FirstStrip.GetChildAt(2))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
 			// 
 			// radBindingNavigator1MoveFirstItem
 			// 
@@ -633,6 +494,8 @@
 			// 
 			// 
 			this.radBindingNavigator1SecondStrip.OverflowButton.Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+			((Telerik.WinControls.UI.RadCommandBarGrip)(this.radBindingNavigator1SecondStrip.GetChildAt(0))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
+			((Telerik.WinControls.UI.RadCommandBarOverflowButton)(this.radBindingNavigator1SecondStrip.GetChildAt(2))).Visibility = Telerik.WinControls.ElementVisibility.Collapsed;
 			// 
 			// radBindingNavigator1AddNewItem
 			// 
@@ -780,6 +643,140 @@
 			this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
 			this.bindingNavigatorDeleteItem.Text = "Delete";
 			// 
+			// sinnerBindingSource
+			// 
+			this.sinnerBindingSource.DataSource = typeof(EntityFrameworkDAL.Sinner);
+			this.sinnerBindingSource.CurrentChanged += new System.EventHandler(this.sinnerBindingSource_CurrentChanged);
+			// 
+			// fullNameDataGridViewTextBoxColumn
+			// 
+			this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "FullName";
+			this.fullNameDataGridViewTextBoxColumn.HeaderText = "FullName";
+			this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
+			// 
+			// ageDataGridViewTextBoxColumn
+			// 
+			this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
+			this.ageDataGridViewTextBoxColumn.HeaderText = "Age";
+			this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+			// 
+			// jobTitleDataGridViewTextBoxColumn
+			// 
+			this.jobTitleDataGridViewTextBoxColumn.DataPropertyName = "JobTitle";
+			this.jobTitleDataGridViewTextBoxColumn.HeaderText = "JobTitle";
+			this.jobTitleDataGridViewTextBoxColumn.Name = "jobTitleDataGridViewTextBoxColumn";
+			// 
+			// salaryDataGridViewTextBoxColumn
+			// 
+			this.salaryDataGridViewTextBoxColumn.DataPropertyName = "Salary";
+			this.salaryDataGridViewTextBoxColumn.HeaderText = "Salary";
+			this.salaryDataGridViewTextBoxColumn.Name = "salaryDataGridViewTextBoxColumn";
+			// 
+			// genderBindingSource
+			// 
+			this.genderBindingSource.DataSource = typeof(EntityFrameworkDAL.Gender);
+			// 
+			// sinBindingSource
+			// 
+			this.sinBindingSource.DataSource = typeof(EntityFrameworkDAL.Sin);
+			// 
+			// punishmentBindingSource
+			// 
+			this.punishmentBindingSource.DataSource = typeof(EntityFrameworkDAL.Punishment);
+			this.punishmentBindingSource.CurrentChanged += new System.EventHandler(this.punishmentBindingSource_CurrentChanged);
+			// 
+			// punisherBindingSource
+			// 
+			this.punisherBindingSource.DataSource = typeof(EntityFrameworkDAL.Punisher);
+			// 
+			// radGridView2
+			// 
+			this.radGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.radGridView2.Location = new System.Drawing.Point(3, 3);
+			// 
+			// 
+			// 
+			gridViewDecimalColumn1.DataType = typeof(int);
+			gridViewDecimalColumn1.FieldName = "Id";
+			gridViewDecimalColumn1.HeaderText = "Id";
+			gridViewDecimalColumn1.IsAutoGenerated = true;
+			gridViewDecimalColumn1.Name = "Id";
+			gridViewDecimalColumn1.Width = 18;
+			gridViewTextBoxColumn1.FieldName = "Name";
+			gridViewTextBoxColumn1.HeaderText = "Name";
+			gridViewTextBoxColumn1.IsAutoGenerated = true;
+			gridViewTextBoxColumn1.Name = "Name";
+			gridViewTextBoxColumn1.Width = 38;
+			gridViewTextBoxColumn2.DataType = typeof(EntityFrameworkDAL.Punishment);
+			gridViewTextBoxColumn2.FieldName = "Punishment";
+			gridViewTextBoxColumn2.HeaderText = "Punishment";
+			gridViewTextBoxColumn2.IsAutoGenerated = true;
+			gridViewTextBoxColumn2.Name = "Punishment";
+			gridViewTextBoxColumn2.Width = 67;
+			gridViewTextBoxColumn3.DataType = typeof(EntityFrameworkDAL.Punisher);
+			gridViewTextBoxColumn3.FieldName = "Punisher";
+			gridViewTextBoxColumn3.HeaderText = "Punisher";
+			gridViewTextBoxColumn3.IsAutoGenerated = true;
+			gridViewTextBoxColumn3.Name = "Punisher";
+			gridViewTextBoxColumn3.Width = 51;
+			gridViewTextBoxColumn4.DataType = typeof(EntityFrameworkDAL.SinDegree);
+			gridViewTextBoxColumn4.FieldName = "SinDegree";
+			gridViewTextBoxColumn4.HeaderText = "SinDegree";
+			gridViewTextBoxColumn4.IsAutoGenerated = true;
+			gridViewTextBoxColumn4.Name = "SinDegree";
+			gridViewTextBoxColumn4.Width = 60;
+			this.radGridView2.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewDecimalColumn1,
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4});
+			this.radGridView2.MasterTemplate.DataSource = this.sinBindingSource;
+			this.radGridView2.Name = "radGridView2";
+			this.radGridView2.Size = new System.Drawing.Size(1109, 618);
+			this.radGridView2.TabIndex = 0;
+			this.radGridView2.Text = "radGridView2";
+			// 
+			// radGridView3
+			// 
+			this.radGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.radGridView3.Location = new System.Drawing.Point(0, 0);
+			// 
+			// 
+			// 
+			gridViewDecimalColumn4.DataType = typeof(int);
+			gridViewDecimalColumn4.FieldName = "Id";
+			gridViewDecimalColumn4.HeaderText = "Id";
+			gridViewDecimalColumn4.IsAutoGenerated = true;
+			gridViewDecimalColumn4.Name = "Id";
+			gridViewDecimalColumn4.Width = 18;
+			gridViewTextBoxColumn7.FieldName = "Name";
+			gridViewTextBoxColumn7.HeaderText = "Name";
+			gridViewTextBoxColumn7.IsAutoGenerated = true;
+			gridViewTextBoxColumn7.Name = "Name";
+			gridViewTextBoxColumn7.Width = 38;
+			gridViewTextBoxColumn8.FieldName = "Phone";
+			gridViewTextBoxColumn8.HeaderText = "Phone";
+			gridViewTextBoxColumn8.IsAutoGenerated = true;
+			gridViewTextBoxColumn8.Name = "Phone";
+			gridViewTextBoxColumn8.Width = 40;
+			gridViewTextBoxColumn9.DataType = typeof(EntityFrameworkDAL.PunisherRank);
+			gridViewTextBoxColumn9.FieldName = "PunisherRank";
+			gridViewTextBoxColumn9.HeaderText = "PunisherRank";
+			gridViewTextBoxColumn9.IsAutoGenerated = true;
+			gridViewTextBoxColumn9.Name = "PunisherRank";
+			gridViewTextBoxColumn9.Width = 76;
+			this.radGridView3.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
+            gridViewDecimalColumn4,
+            gridViewTextBoxColumn7,
+            gridViewTextBoxColumn8,
+            gridViewTextBoxColumn9});
+			this.radGridView3.MasterTemplate.DataSource = this.punisherBindingSource;
+			this.radGridView3.Name = "radGridView3";
+			this.radGridView3.Size = new System.Drawing.Size(1115, 624);
+			this.radGridView3.TabIndex = 0;
+			this.radGridView3.Text = "radGridView3";
+			// 
 			// HellManager
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -794,21 +791,16 @@
 			this.tabPage1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.sinnersDataGridView)).EndInit();
 			this.tabPage2.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.sinsDataGridView)).EndInit();
 			this.tabPage3.ResumeLayout(false);
 			this.tabPage3.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsGridView.MasterTemplate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsGridView)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentsGridView.MasterTemplate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentsGridView)).EndInit();
+			this.tabPage4.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.saveChangesButton)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.genderBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.punishmentSinsBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.punishmentBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.punisherBindingSource)).EndInit();
 			this.toolStrip1.ResumeLayout(false);
 			this.toolStrip1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.radBindingNavigator1)).EndInit();
@@ -819,6 +811,15 @@
 			((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
 			this.bindingNavigator1.ResumeLayout(false);
 			this.bindingNavigator1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.genderBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.punishmentBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.punisherBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.radGridView2.MasterTemplate)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.radGridView2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.radGridView3.MasterTemplate)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.radGridView3)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -830,16 +831,6 @@
 		private System.Windows.Forms.TabPage tabPage2;
 		private System.Windows.Forms.DataGridView sinnersDataGridView;
 		private System.Windows.Forms.BindingSource sinnerBindingSource;
-		private System.Windows.Forms.DataGridView sinsDataGridView;
-		private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn punishmentIdDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn punisherIdDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn sinDegreeIdDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn sinnersDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn punishmentDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn punisherDataGridViewTextBoxColumn;
-		private System.Windows.Forms.DataGridViewTextBoxColumn sinDegreeDataGridViewTextBoxColumn;
 		private System.Windows.Forms.BindingSource sinnerSinsBindingSource;
 		private System.Windows.Forms.TabPage tabPage3;
 		private System.Windows.Forms.BindingSource punishmentBindingSource;
@@ -893,5 +884,7 @@
 		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
 		private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
 		private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+		private Telerik.WinControls.UI.RadGridView radGridView2;
+		private Telerik.WinControls.UI.RadGridView radGridView3;
 	}
 }
