@@ -20,45 +20,10 @@ namespace HellManager
 			sinBindingSource.DataSource = _context.Sins.ToList();
 
 			GetPunishmentSins();
-			//Sinner sinner = _context.Sinners.First();
-			//sinnerSinsBindingSource.DataSource = sinner.Sins;
-
-			/*IQueryable<SinsDTO> dtos = from sinner in _context.Sinners
-					   from sin in sinner.Sins
-					   select new SinsDTO()
-					   {
-						   Sinner = sinner.FullName,
-						   Sins = sin.Name
-					   };*/
 
 
 		}
 
-		private void HellManager_Load(object sender, EventArgs e)
-		{
-			sinnerSinsBindingSource.DataSource = sinnerBindingSource;
-			sinnerSinsBindingSource.DataMember = "Sins";
-		}
-
-		private void sinnersDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-		{
-			if (sinnersDataGridView.SelectedRows.Count != 0)
-			{
-				DataGridViewRow row = this.sinnersDataGridView.SelectedRows[0];
-				String clickRez = row.Cells["Name"].Value.ToString();
-				MessageBox.Show(clickRez);
-			}
-			//			var ids = sinnersDataGridView.SelectedRows. GetSelectedFieldValues("id");
-			//			foreach (var id in ids)
-		}
-
-		private void masterGridView_CurrentRowChanged(object sender, CurrentRowChangedEventArgs e)
-		{
-			//			if (e.CurrentRow != null && e.CurrentRow is GridViewDataRowInfo)
-			//			{
-			//				this.detailGridView.DataSource = ((_context.Punishments)((DataRowView)e.CurrentRow.DataBoundItem).Row).
-			//			}
-		}
 
 		public void GetPunishmentSins()
 		{
@@ -72,14 +37,54 @@ namespace HellManager
 
 		}
 
+		/*public void GetSinnerSins()
+		{
+			var matchingSins = _context.Sinners.GroupJoin(_context.Sins, sinner => sinner.Id,
+				sin => sin.PunishmentId,
+				(punishment, availableSins) => new { punishment, sins = availableSins });
+			_groupSins = matchingSins.ToDictionary(x => x.punishment, y => y.sins);
+
+
+			punishmentBindingSource.DataSource = _groupSins.Keys;
+
+		}*/
+		private void punishmentBindingSource_CurrentChanged(object sender, EventArgs e)
+		{
+			Punishment currentPunishment = punishmentBindingSource.Current as Punishment;
+			//if (currentPunishment != null) punishmentSinsBindingSource.DataSource = currentPunishment.Sins.ToList();
+
+			punishmentSinsBindingSource.DataSource = _groupSins[(Punishment)punishmentBindingSource.Current];
+		}
+
+		private void sinnerBindingSource_CurrentChanged(object sender, EventArgs e)
+		{
+			Sinner sinner = sinnerBindingSource.Current as Sinner;
+			if (sinner == null) return;
+			sinnerSinsBindingSource.DataSource = sinner.Sins.ToList();
+
+
+		}
+
+		private void sinnersDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+		}
+
+		private void masterGridView_CurrentRowChanged(object sender, CurrentRowChangedEventArgs e)
+		{
+		}
+
+
+
 		private void punishmentSinsBindingSource_CurrentChanged(object sender, EventArgs e)
 		{
 		}
 
-		private void punishmentBindingSource_CurrentChanged(object sender, EventArgs e)
+		private void HellManager_Load(object sender, EventArgs e)
 		{
-			punishmentSinsBindingSource.DataSource = _groupSins[(Punishment)punishmentBindingSource.Current];
+
 		}
+
 	}
 
 
