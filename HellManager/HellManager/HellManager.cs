@@ -35,7 +35,31 @@ namespace HellManager
 			genderBindingSource.DataSource = _context.Genders.ToList();
 
 		}
+		private void saveChangesButton_Click(object sender, EventArgs e)
+		{
 
+			Sinner sinner = new Sinner()
+			{
+				FullName = "Ania"
+
+			};
+			_context.Sinners.Add(sinner);
+			_context.SaveChanges();
+
+
+//			if (sinnersDataGridView.IsCurrentCellDirty || sinnersDataGridView.IsCurrentRowDirty)
+//			{
+//				sinnersDataGridView.CurrentRow?.DataGridView.EndEdit();
+//				sinnersDataGridView.EndEdit();
+//
+//				CurrencyManager cm = (CurrencyManager)sinnersDataGridView.BindingContext[sinnersDataGridView.DataSource, sinnersDataGridView.DataMember];
+//				cm.EndCurrentEdit();
+//
+//			}
+//			_context.SaveChanges();
+
+
+		}
 
 		//Sinner
 		private void sinnerBindingSource_CurrentChanged(object sender, EventArgs e)
@@ -90,6 +114,13 @@ namespace HellManager
 		{
 
 		}
+
+		private void tabPage4_Click(object sender, EventArgs e)
+		{
+
+		}
+
+
 		/*public void GetPunishmentSins()
 {
 var matchingSins = _context.Punishments.GroupJoin(_context.Sins, punishment => punishment.Id,
