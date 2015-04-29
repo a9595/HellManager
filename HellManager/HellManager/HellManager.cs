@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Windows.Forms;
@@ -24,22 +22,7 @@ namespace HellManager
 		radGridView1.Columns[3].IsVisible = false;
 		radGridView1.Columns[4].IsVisible = false;
 		radGridView1.Columns[5].IsVisible = false;
-
-			//addComboBoxCol();
-		}
-
-		private void addComboBoxCol()
-		{
-			DataGridViewComboBoxColumn cmb = new DataGridViewComboBoxColumn();
-			cmb.DataSource = _context.Genders.ToList();
-			cmb.DisplayMember = "Name";
-			cmb.ValueMember = "Id";
-			cmb.DataPropertyName = "Id";
-			//sinnersDataGridView.Columns.Add(cmb);
-		}
-		private void toolStripButtonAddNewSinner_Click(object sender, EventArgs e)
-		{
-
+			
 		}
 
 		private void SetDataSources()
@@ -75,7 +58,7 @@ namespace HellManager
 				MessageBox.Show("Update successful");
 				_context.SaveChanges();
 			}
-			catch (System.Exception ex)
+			catch (Exception ex)
 			{
 				MessageBox.Show("Update failed");
 			}
