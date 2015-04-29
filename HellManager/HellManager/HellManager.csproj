@@ -90,6 +90,7 @@
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\EntityFrameworkDAL.EFModelContainer.datasource" />
+    <None Include="Properties\DataSources\EntityFrameworkDAL.Gender.datasource" />
     <None Include="Properties\DataSources\EntityFrameworkDAL.Punisher.datasource" />
     <None Include="Properties\DataSources\EntityFrameworkDAL.PunisherRank.datasource" />
     <None Include="Properties\DataSources\EntityFrameworkDAL.Punishment.datasource" />

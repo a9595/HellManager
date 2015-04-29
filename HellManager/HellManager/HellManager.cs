@@ -17,7 +17,12 @@ namespace HellManager
 			InitializeComponent();
 			SetDataSources();
 
-			
+			DataGridViewComboBoxColumn cmb = new DataGridViewComboBoxColumn();
+			cmb.DataSource = _context.Genders.ToList();
+			cmb.DisplayMember = "Name";
+			cmb.ValueMember = "Id";
+			cmb.DataPropertyName = "Id";
+			//sinnersDataGridView.Columns.Add(cmb);
 
 
 		}
@@ -27,18 +32,12 @@ namespace HellManager
 			sinnerBindingSource.DataSource = _context.Sinners.ToList();
 			sinBindingSource.DataSource = _context.Sins.ToList();
 			punishmentBindingSource.DataSource = _context.Punishments.ToList();
+			genderBindingSource.DataSource = _context.Genders.ToList();
+
 		}
 
-		
 
-		
-		private void punishmentBindingSource_CurrentChanged(object sender, EventArgs e)
-		{
-			Punishment selectedPunishment = punishmentBindingSource.Current as Punishment;
-			if (selectedPunishment == null) return;
-			punishmentSinsBindingSource.DataSource = selectedPunishment.Sins.ToList();
-		}
-
+		//Sinner
 		private void sinnerBindingSource_CurrentChanged(object sender, EventArgs e)
 		{
 			Sinner selectedSinner = sinnerBindingSource.Current as Sinner;
@@ -50,6 +49,17 @@ namespace HellManager
 			sinnerSinsBindingSource.ResetBindings(false); //update gv
 
 		}
+
+
+		//Punishment
+		private void punishmentBindingSource_CurrentChanged(object sender, EventArgs e)
+		{
+			Punishment selectedPunishment = punishmentBindingSource.Current as Punishment;
+			if (selectedPunishment == null) return;
+			punishmentSinsBindingSource.DataSource = selectedPunishment.Sins.ToList();
+		}
+
+		
 
 		private void sinnersDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
