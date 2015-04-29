@@ -31,16 +31,16 @@
 			this.components = new System.ComponentModel.Container();
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
-			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.sinnerSinsDataGridView = new System.Windows.Forms.DataGridView();
 			this.sinnersDataGridView = new System.Windows.Forms.DataGridView();
-			this.sinnerBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.jobTitleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.salaryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.sinnerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.tabPage2 = new System.Windows.Forms.TabPage();
 			this.sinsDataGridView = new System.Windows.Forms.DataGridView();
-			this.sinBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.punishmentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,15 +50,17 @@
 			this.punishmentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.punisherDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.sinDegreeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.sinnerSinsDataGridView = new System.Windows.Forms.DataGridView();
+			this.sinBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.sinnerSinsBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.tabControl1.SuspendLayout();
 			this.tabPage1.SuspendLayout();
-			this.tabPage2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsDataGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnersDataGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).BeginInit();
+			this.tabPage2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.sinsDataGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsDataGridView)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tabControl1
@@ -83,16 +85,15 @@
 			this.tabPage1.Text = "Sinners";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			// 
-			// tabPage2
+			// sinnerSinsDataGridView
 			// 
-			this.tabPage2.Controls.Add(this.sinsDataGridView);
-			this.tabPage2.Location = new System.Drawing.Point(4, 22);
-			this.tabPage2.Name = "tabPage2";
-			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(1115, 624);
-			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "Sinns";
-			this.tabPage2.UseVisualStyleBackColor = true;
+			this.sinnerSinsDataGridView.AutoGenerateColumns = false;
+			this.sinnerSinsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.sinnerSinsDataGridView.DataSource = this.sinnerSinsBindingSource;
+			this.sinnerSinsDataGridView.Location = new System.Drawing.Point(275, 348);
+			this.sinnerSinsDataGridView.Name = "sinnerSinsDataGridView";
+			this.sinnerSinsDataGridView.Size = new System.Drawing.Size(530, 163);
+			this.sinnerSinsDataGridView.TabIndex = 1;
 			// 
 			// sinnersDataGridView
 			// 
@@ -109,10 +110,6 @@
 			this.sinnersDataGridView.Name = "sinnersDataGridView";
 			this.sinnersDataGridView.Size = new System.Drawing.Size(570, 247);
 			this.sinnersDataGridView.TabIndex = 0;
-			// 
-			// sinnerBindingSource
-			// 
-			this.sinnerBindingSource.DataSource = typeof(EntityFrameworkDAL.Sinner);
 			// 
 			// fullNameDataGridViewTextBoxColumn
 			// 
@@ -144,6 +141,21 @@
 			this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
 			this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
 			// 
+			// sinnerBindingSource
+			// 
+			this.sinnerBindingSource.DataSource = typeof(EntityFrameworkDAL.Sinner);
+			// 
+			// tabPage2
+			// 
+			this.tabPage2.Controls.Add(this.sinsDataGridView);
+			this.tabPage2.Location = new System.Drawing.Point(4, 22);
+			this.tabPage2.Name = "tabPage2";
+			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage2.Size = new System.Drawing.Size(1115, 624);
+			this.tabPage2.TabIndex = 1;
+			this.tabPage2.Text = "Sinns";
+			this.tabPage2.UseVisualStyleBackColor = true;
+			// 
 			// sinsDataGridView
 			// 
 			this.sinsDataGridView.AutoGenerateColumns = false;
@@ -163,10 +175,6 @@
 			this.sinsDataGridView.Name = "sinsDataGridView";
 			this.sinsDataGridView.Size = new System.Drawing.Size(810, 294);
 			this.sinsDataGridView.TabIndex = 0;
-			// 
-			// sinBindingSource
-			// 
-			this.sinBindingSource.DataSource = typeof(EntityFrameworkDAL.Sin);
 			// 
 			// idDataGridViewTextBoxColumn
 			// 
@@ -222,13 +230,9 @@
 			this.sinDegreeDataGridViewTextBoxColumn.HeaderText = "SinDegree";
 			this.sinDegreeDataGridViewTextBoxColumn.Name = "sinDegreeDataGridViewTextBoxColumn";
 			// 
-			// sinnerSinsDataGridView
+			// sinBindingSource
 			// 
-			this.sinnerSinsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.sinnerSinsDataGridView.Location = new System.Drawing.Point(275, 348);
-			this.sinnerSinsDataGridView.Name = "sinnerSinsDataGridView";
-			this.sinnerSinsDataGridView.Size = new System.Drawing.Size(530, 163);
-			this.sinnerSinsDataGridView.TabIndex = 1;
+			this.sinBindingSource.DataSource = typeof(EntityFrameworkDAL.Sin);
 			// 
 			// HellManager
 			// 
@@ -240,12 +244,13 @@
 			this.Text = "HellManager";
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);
-			this.tabPage2.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsDataGridView)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnersDataGridView)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinnerBindingSource)).EndInit();
+			this.tabPage2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.sinsDataGridView)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.sinBindingSource)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsDataGridView)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.sinnerSinsBindingSource)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -274,5 +279,6 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn sinDegreeDataGridViewTextBoxColumn;
 		private System.Windows.Forms.BindingSource sinBindingSource;
 		private System.Windows.Forms.DataGridView sinnerSinsDataGridView;
+		private System.Windows.Forms.BindingSource sinnerSinsBindingSource;
 	}
 }
