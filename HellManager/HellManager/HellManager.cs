@@ -155,6 +155,14 @@ namespace HellManager
 			MessageBox.Show(message);
 		}
 
+		private void sinnersDataGridView_DoubleClick(object sender, EventArgs e)
+		{
+			Sinner currentObject = (Sinner)sinnersDataGridView.CurrentRow.DataBoundItem;
+			SinnerInfo secondForm = new SinnerInfo(currentObject);
+			secondForm.ShowDialog(this);
+			secondForm.Dispose();
+		}
+
 
 
 
